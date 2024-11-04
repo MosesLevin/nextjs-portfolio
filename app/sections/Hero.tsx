@@ -2,10 +2,37 @@ import heroImage from '@/assets/dummy_600x400_ffffff_cccccc.png'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import whiteNoise from '@/assets/WhiteNoise.jpg'
+import Stern from '@/assets/Stern.svg'
+import SternWeit from '@assets/SternWeit.svg'
+import HeroSolarSystem from '@/components/HeroSolarSystem'
 
 function Hero() {
   return (
-    <div className="py-32">
+    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      <div
+        className="absolute inset-0 -z-30 opacity-5"
+        style={{
+          backgroundImage: `url(${whiteNoise.src})`,
+        }}
+      ></div>
+      {/* circles are borders with radius full different sizes */}
+      <div className="size-[620px] hero-circles"></div>
+      <div className="size-[820px] hero-circles"></div>
+      <div className="size-[1020px] hero-circles"></div>
+      <div className="size-[1220px] hero-circles"></div>
+      {/* high opacity svgs. Component to set positioning and effects of svgs */}
+      <HeroSolarSystem size={800} rotation={-72}>
+        <Stern className="size-28 text-emerald-300" />
+      </HeroSolarSystem>
+      <HeroSolarSystem size={550} rotation={21}>
+        <Stern className="size-12 text-emerald-300" />
+      </HeroSolarSystem>
+      <HeroSolarSystem size={590} rotation={97}>
+        <Stern className="size-8 text-emerald-300" />
+      </HeroSolarSystem>
+      {/* low opacity svgs */}
+
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
@@ -21,15 +48,17 @@ function Hero() {
             </div>
           </div>
         </div>
-        <h1 className="font-serif text-3xl text-center mt-8 tracking-wide">
-          Building Websites very good yes
-        </h1>
-        <p className="mt-4 text-center text-white/50 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
-          amet enim eget risus efficitur malesuada. Praesent eu nulla venenatis,
-          tincidunt quam nec, convallis mi.
-        </p>
-        <div className="flex flex-col items-center mt-8 gap-4">
+        <div className="max-w-lg mx-auto">
+          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+            Building Websites very good yes
+          </h1>
+          <p className="mt-4 text-center text-white/60 md:text-lg ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet enim eget risus efficitur malesuada. Praesent eu nulla
+            venenatis, tincidunt quam nec, convallis mi.
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
             <FontAwesomeIcon icon={faArrowDown} className="h-4" />
