@@ -4,35 +4,59 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import whiteNoise from '@/assets/WhiteNoise.jpg'
 import Stern from '@/assets/Stern.svg'
-import SternWeit from '@assets/SternWeit.svg'
+import SternWeit from '@/assets/SternWeit.svg'
 import HeroSolarSystem from '@/components/HeroSolarSystem'
 
 function Hero() {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      <div
-        className="absolute inset-0 -z-30 opacity-5"
-        style={{
-          backgroundImage: `url(${whiteNoise.src})`,
-        }}
-      ></div>
-      {/* circles are borders with radius full different sizes */}
-      <div className="size-[620px] hero-circles"></div>
-      <div className="size-[820px] hero-circles"></div>
-      <div className="size-[1020px] hero-circles"></div>
-      <div className="size-[1220px] hero-circles"></div>
-      {/* high opacity svgs. Component to set positioning and effects of svgs */}
-      <HeroSolarSystem size={800} rotation={-72}>
-        <Stern className="size-28 text-emerald-300" />
-      </HeroSolarSystem>
-      <HeroSolarSystem size={550} rotation={21}>
-        <Stern className="size-12 text-emerald-300" />
-      </HeroSolarSystem>
-      <HeroSolarSystem size={590} rotation={97}>
-        <Stern className="size-8 text-emerald-300" />
-      </HeroSolarSystem>
-      {/* low opacity svgs */}
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+        <div
+          className="absolute inset-0 -z-30 opacity-5"
+          style={{
+            backgroundImage: `url(${whiteNoise.src})`,
+          }}
+        ></div>
+        {/* circles are borders with radius full different sizes */}
+        <div className="size-[620px] hero-circles"></div>
+        <div className="size-[820px] hero-circles"></div>
+        <div className="size-[1020px] hero-circles"></div>
+        <div className="size-[1220px] hero-circles"></div>
+        {/* high opacity svgs. Component to set positioning and effects of svgs */}
+        <HeroSolarSystem size={800} rotation={-72}>
+          <Stern className="size-28 text-emerald-300" />
+        </HeroSolarSystem>
+        <HeroSolarSystem size={550} rotation={21}>
+          <Stern className="size-12 text-emerald-300" />
+        </HeroSolarSystem>
+        <HeroSolarSystem size={590} rotation={97}>
+          <Stern className="size-8 text-emerald-300" />
+        </HeroSolarSystem>
+        {/* low opacity svgs */}
+        <HeroSolarSystem size={430} rotation={-13}>
+          <SternWeit className="size-8 text-emerald-300/20" />
+        </HeroSolarSystem>
+        <HeroSolarSystem size={440} rotation={76}>
+          <SternWeit className="size-5 text-emerald-300/20" />
+        </HeroSolarSystem>
+        <HeroSolarSystem size={530} rotation={175}>
+          <SternWeit className="size-10 text-emerald-300/20" />
+        </HeroSolarSystem>
+        <HeroSolarSystem size={710} rotation={143}>
+          <SternWeit className="size-14 text-emerald-300/20" />
+        </HeroSolarSystem>
 
+        {/* full circles */}
+        <HeroSolarSystem size={720} rotation={83}>
+          <div className="size-3 rounded-full bg-emerald-300/20" />
+        </HeroSolarSystem>
+        <HeroSolarSystem size={520} rotation={-42}>
+          <div className="size-2 rounded-full bg-emerald-300/20" />
+        </HeroSolarSystem>
+        <HeroSolarSystem size={650} rotation={-7}>
+          <div className="size-2 rounded-full bg-emerald-300/20" />
+        </HeroSolarSystem>
+      </div>
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
