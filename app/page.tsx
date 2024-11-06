@@ -1,6 +1,7 @@
 import Header from './sections/Header'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
+import Banner from './sections/Banner'
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Header />
       <Hero />
       <Projects />
+      <Banner />
     </div>
   )
 }
