@@ -11,6 +11,17 @@ const words = [
   'Search Optimized',
   'Usable',
   'Reliable',
+  'Performant',
+  'Accessible',
+  'Secure',
+  'Interactive',
+  'Scalable',
+  'User Friendly',
+  'Responsive',
+  'Maintainable',
+  'Search Optimized',
+  'Usable',
+  'Reliable',
 ]
 
 function Banner() {
