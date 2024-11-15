@@ -55,10 +55,14 @@ function Projects() {
 
         {/* CARDS FOR PROJECTS */}
         <div className="flex flex-col mt-10 md:mt-20 gap-20 ">
-          {portfolioProject.map((project) => (
+          {portfolioProject.map((project, projectIndex) => (
+            // adding sticky class to Card with top-value so when it gets to top-value it will stick, adding "style" prop for sticky gap between cards
             <Card
               key={project.title}
-              className=" px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20  "
+              className=" px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16 "
+              style={{
+                top: `calc(64px + ${projectIndex * 50}px)`,
+              }}
             >
               {/* grid for lg view */}
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">

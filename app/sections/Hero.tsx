@@ -23,39 +23,105 @@ function Hero() {
         <div className="size-[1020px] hero-circles"></div>
         <div className="size-[1220px] hero-circles"></div>
         {/* high opacity svgs. Component to set positioning and effects of svgs */}
-        <HeroSolarSystem size={800} rotation={-72}>
-          <Stern className="size-28 text-emerald-300" />
-        </HeroSolarSystem>
-        <HeroSolarSystem size={550} rotation={21}>
-          <Stern className="size-12 text-emerald-300" />
-        </HeroSolarSystem>
-        <HeroSolarSystem size={590} rotation={97}>
-          <Stern className="size-8 text-emerald-300" />
-        </HeroSolarSystem>
-        {/* low opacity svgs */}
-        <HeroSolarSystem size={430} rotation={-13}>
-          <SternWeit className="size-8 text-emerald-300/20" />
-        </HeroSolarSystem>
-        <HeroSolarSystem size={440} rotation={76}>
+        <HeroSolarSystem
+          size={440}
+          rotation={76}
+          shouldOrbit
+          orbitDuration="14s"
+          shouldSpin
+          spinDuration="3s"
+        >
           <SternWeit className="size-5 text-emerald-300/20" />
         </HeroSolarSystem>
-        <HeroSolarSystem size={530} rotation={175}>
+        <HeroSolarSystem
+          size={430}
+          rotation={-13}
+          shouldOrbit
+          orbitDuration="27s"
+          shouldSpin
+          spinDuration="3s"
+        >
+          <SternWeit className="size-8 text-emerald-300/20" />
+        </HeroSolarSystem>
+        <HeroSolarSystem
+          size={520}
+          rotation={-42}
+          shouldOrbit
+          orbitDuration="30s"
+        >
+          <div className="size-2 rounded-full bg-emerald-300/20" />
+        </HeroSolarSystem>
+        <HeroSolarSystem
+          size={530}
+          rotation={175}
+          shouldOrbit
+          orbitDuration="33s"
+          shouldSpin
+          spinDuration="3s"
+        >
           <SternWeit className="size-10 text-emerald-300/20" />
         </HeroSolarSystem>
-        <HeroSolarSystem size={710} rotation={143}>
+        <HeroSolarSystem
+          size={550}
+          rotation={21}
+          shouldOrbit
+          orbitDuration="36s"
+          shouldSpin
+          spinDuration="7s"
+        >
+          <Stern className="size-12 text-emerald-300" />
+        </HeroSolarSystem>
+        <HeroSolarSystem
+          size={590}
+          rotation={97}
+          shouldOrbit
+          orbitDuration="39s"
+          shouldSpin
+          spinDuration="8s"
+        >
+          <Stern className="size-8 text-emerald-300" />
+        </HeroSolarSystem>
+        <HeroSolarSystem
+          size={650}
+          rotation={-7}
+          shouldOrbit
+          orbitDuration="42s"
+          spinDuration=""
+        >
+          <div className="size-2 rounded-full bg-emerald-300/20" />
+        </HeroSolarSystem>
+        <HeroSolarSystem
+          size={710}
+          rotation={143}
+          shouldOrbit
+          orbitDuration="45s"
+          shouldSpin
+          spinDuration="3s"
+        >
           <SternWeit className="size-14 text-emerald-300/20" />
         </HeroSolarSystem>
-
-        {/* full circles */}
-        <HeroSolarSystem size={720} rotation={83}>
+        <HeroSolarSystem
+          size={720}
+          rotation={83}
+          shouldOrbit
+          orbitDuration="48s"
+          spinDuration=""
+        >
           <div className="size-3 rounded-full bg-emerald-300/20" />
         </HeroSolarSystem>
-        <HeroSolarSystem size={520} rotation={-42}>
-          <div className="size-2 rounded-full bg-emerald-300/20" />
+        <HeroSolarSystem
+          size={800}
+          rotation={-72}
+          shouldOrbit
+          orbitDuration="51s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <Stern className="size-28 text-emerald-300" />
         </HeroSolarSystem>
-        <HeroSolarSystem size={650} rotation={-7}>
-          <div className="size-2 rounded-full bg-emerald-300/20" />
-        </HeroSolarSystem>
+        {/* low opacity svgs */}
+
+        {/* full circles */}
       </div>
       <div className="container">
         <div className="flex flex-col items-center">
@@ -66,7 +132,10 @@ function Hero() {
           />
 
           <div className="inline-flex bg-gray-950 border border-gray-800 px-4 py-1.5 items-center gap-4 rounded-lg">
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="relative bg-green-500 size-2.5 rounded-full ">
+              <div className="absolute bg-green-500  inset-0 rounded-full animate-ping-lg"></div>
+            </div>
+
             <div className="text-sm font-medium">
               Available for new projects
             </div>
