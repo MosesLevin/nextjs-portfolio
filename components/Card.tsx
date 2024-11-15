@@ -1,11 +1,13 @@
 import WhiteNoise from '@/assets/WhiteNoise.jpg'
-import { PropsWithChildren } from 'react'
+import { ComponentPropsWithoutRef, PropsWithChildren } from 'react'
 import { twMerge } from 'tailwind-merge'
 
+// tell it what our base element is: div , and we take ...other to get all other div attributes like style
 export default function Card({
   className,
   children,
-}: PropsWithChildren<{ className?: string }>) {
+  ...other
+}: ComponentPropsWithoutRef<'div'>) {
   return (
     <>
       <div
@@ -13,6 +15,7 @@ export default function Card({
           "bg-gray-800 rounded-3xl relative z-0 after:content-[''] after:absolute after:inset-0 after:z-10 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none overflow-hidden",
           className
         )}
+        {...other}
       >
         <div
           className="absolute inset-0 -z-10 opacity-5"
