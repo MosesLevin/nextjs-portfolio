@@ -4,6 +4,8 @@ import Projects from './sections/Projects'
 import Banner from './sections/Banner'
 import References from './sections/References'
 import About from './sections/About'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <Banner />
       <References />
       <About />
+      <Contact />
+      <Footer />
     </div>
   )
 }
