@@ -1,16 +1,18 @@
-import heroImage from '@/assets/dummy_600x400_ffffff_cccccc.png'
+import heroImage from '@/assets/MoComputerMemoji.png'
 import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import whiteNoise from '@/assets/WhiteNoise.jpg'
 import Stern from '@/assets/Stern.svg'
 import SternWeit from '@/assets/SternWeit.svg'
 import HeroSolarSystem from '@/components/HeroSolarSystem'
+import HeroButtons from '@/components/HeroButtons'
 
 function Hero() {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+    <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      <div
+        id="home"
+        className="absolute inset-0 -z-10 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]"
+      >
         <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{
@@ -128,7 +130,7 @@ function Hero() {
           <Image
             src={heroImage}
             className="size-[100px]"
-            alt="Alt description of image"
+            alt="Web Developer coding on PC"
           />
 
           <div className="inline-flex bg-gray-950 border border-gray-800 px-4 py-1.5 items-center gap-4 rounded-lg">
@@ -151,18 +153,9 @@ function Hero() {
             venenatis, tincidunt quam nec, convallis mi.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-            <span className="font-semibold">Explore My Work</span>
-            <FontAwesomeIcon icon={faArrowDown} className="h-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span>👍🏻</span>
-            <span className="font-semibold">Write to me</span>
-          </button>
-        </div>
+        <HeroButtons />
       </div>
-    </div>
+    </section>
   )
 }
 

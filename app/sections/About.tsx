@@ -2,15 +2,15 @@
 import Card from '@/components/Card'
 import SectionHeader from '@/components/SectionHeader'
 import Image from 'next/image'
-import BookCover from '@/assets/book-alan-watts.jpeg'
 import IconPlaceholder from '@/assets/github.svg'
 import otherIconPlaceholder from '@/assets/arrow-diag.svg'
-import mapImage from '@/assets/map.png'
-import avatarIcon from '@/assets/placeholderAvatar.png'
+import berlinMap2 from '@/assets/berlinMap2.jpg'
+import avatarIcon from '@/assets/MoSmileMemoji.png'
 import CardHeader from '@/components/CardHeader'
 import ToolboxItems from '@/components/ToolboxItems'
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
+import RotatingBookCovers from '@/components/RotatingBookCovers'
 
 type interfaceToolboxItem = { title: string; iconType: React.ElementType } // This ensures `iconType` is "typed" correctly
 const toolboxItems: interfaceToolboxItem[] = [
@@ -104,7 +104,7 @@ const hobbies = [
 export default function About() {
   const constrainRef = useRef(null)
   return (
-    <div className="py-20 lg:py-28">
+    <section id="about" className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -114,19 +114,8 @@ export default function About() {
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             {/*Section WHAT I READ */}
-            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
-              <CardHeader
-                title="What I read"
-                description="Explore the books shaping my perspectives."
-                className2="md: whitespace-nowrap "
-              />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image
-                  src={BookCover}
-                  alt="Book cover - Alan Watts - Out of your mind"
-                />
-              </div>
-            </Card>
+            <RotatingBookCovers />
+
             {/* Section TOOLBOX*/}
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
@@ -138,12 +127,12 @@ export default function About() {
               <ToolboxItems
                 items={toolboxItems}
                 className=""
-                itemsWrapperClassName="animate-left-movement [animation-duration:24s]"
+                itemsWrapperClassName="animate-left-movement [animation-duration:25s] hover:[animation-play-state:paused]"
               />
               <ToolboxItems
                 items={toolboxItems}
                 className="mt-6"
-                itemsWrapperClassName="animate-right-movement [animation-duration:24s]"
+                itemsWrapperClassName="animate-right-movement [animation-duration:25s] hover:[animation-play-state:paused]"
               />
             </Card>
           </div>
@@ -182,9 +171,12 @@ export default function About() {
 
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
               <Image
-                src={mapImage}
+                src={berlinMap2}
                 alt="local map"
-                className="h-full w-full object-cover object-left-top"
+                className="h-full w-full object-cover object-left-top transform -translate-y-10  scale-125  md:-translate-y-10 md:-translate-x-8 "
+                // style={{
+                //   transform: 'scale(1.5) translateX(16%) translateY(-10%)',
+                // }}
               />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-24 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
                 {/* animate ping of div "under" image */}
@@ -192,14 +184,14 @@ export default function About() {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
                 <Image
                   src={avatarIcon}
-                  alt="smiley face image"
-                  className="size-20 rounded-full my-2 mx-2"
+                  alt="Smiling Web Developer"
+                  className="size-30 rounded-full"
                 />
               </div>
             </Card>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

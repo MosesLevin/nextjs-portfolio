@@ -45,7 +45,7 @@ const portfolioProject = [
 
 function Projects() {
   return (
-    <section className="pb--16 lg:py-24">
+    <section id="projects" className="pb--16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Real-world Results"
