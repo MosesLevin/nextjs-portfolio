@@ -29,12 +29,31 @@ const config: Config = {
       animation: {
         // Hero section availability ping
         'ping-lg': 'ping-lg 1s ease-in-out infinite',
+        // take animate-left keyframe and add this tailwind to its classname
+        'left-movement': 'left-movement 1s linear infinite',
+        'right-movement': 'right-movement 1s linear infinite',
       },
       keyframes: {
         'ping-lg': {
           '75%, 100%': {
             transform: 'scale(3)',
             opacity: '0',
+          },
+        },
+        'left-movement': {
+          '0%': {
+            transform: 'translateX(0%)',
+          },
+          '100%': {
+            transform: 'translateX(-50%)',
+          },
+        },
+        'right-movement': {
+          '0%': {
+            transform: 'translateX(-50%)',
+          },
+          '100%': {
+            transform: 'translateX(0%)',
           },
         },
       },

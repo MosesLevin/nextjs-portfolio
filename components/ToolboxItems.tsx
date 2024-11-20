@@ -1,5 +1,6 @@
 import { twMerge } from 'tailwind-merge'
 import StackIcons from './StackIcons'
+import { Fragment } from 'react'
 
 export default function ToolboxItems({
   items,
@@ -30,14 +31,19 @@ export default function ToolboxItems({
       >
         {/* mapping over the "stack" icons and making a new component to feed the icons into to be able to set color individually, 
 since the icons are components with svgr/webpack we need to "feed a component" which we handle in the component itself */}
-        {items.map((item) => (
-          <div
-            key={item.title}
-            className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
-          >
-            <StackIcons component={item.iconType} />
-            <span className="font-semibold">{item.title}</span>
-          </div>
+        {/* animate with duplicating the map data in a fragment */}
+        {[...new Array(2)].fill(0).map((_, idx) => (
+          <Fragment key={idx}>
+            {items.map((item) => (
+              <div
+                key={item.title}
+                className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
+              >
+                <StackIcons component={item.iconType} />
+                <span className="font-semibold">{item.title}</span>
+              </div>
+            ))}
+          </Fragment>
         ))}
       </div>
     </div>
