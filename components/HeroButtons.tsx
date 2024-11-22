@@ -21,7 +21,7 @@ export default function HeroButtons() {
         className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer
         hover:bg-white/75 hover:text-black transition duration-200"
       >
-        <Envelope className="size-5 fill-black " />
+        <Envelope className="size-5 fill-black stroke " />
         <span className="font-semibold">Write to me</span>
       </Link>
     </div>

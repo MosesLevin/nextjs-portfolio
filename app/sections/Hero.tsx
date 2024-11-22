@@ -8,7 +8,7 @@ import HeroButtons from '@/components/HeroButtons'
 
 function Hero() {
   return (
-    <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip ">
       <div
         id="home"
         className="absolute inset-0 -z-10 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]"
