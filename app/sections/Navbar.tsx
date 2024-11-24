@@ -20,14 +20,13 @@ function Navbar() {
           { to: 'home', label: 'Home', duration: 500 },
           { to: 'projects', label: 'Projects', duration: 700 },
           { to: 'about', label: 'About', duration: 800 },
-          { to: 'contact', label: 'Contact', duration: 1000, offset: -50 },
+          { to: 'contact', label: 'Contact', duration: 1000 },
         ].map(({ to, label, duration }) => (
           <Link
             key={to}
             to={to}
             smooth={true}
             duration={duration}
-            offset={-50}
             className={twMerge(baseClass, activeLink === to && activeClass)}
             onSetActive={() => setActiveLink(to)}
             spy={true}
