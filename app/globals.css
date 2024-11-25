@@ -12,6 +12,11 @@
   }
 }
 
+.button-animation {
+  @apply rounded-xl 
+  shadow focus:outline-none focus:ring focus-visible:outline-none focus-visible:ring relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[900ms] hover:ring-2 hover:scale-105 hover:transform duration-200 hover:ease-in-out;
+}
+
 @layer utilities {
   .container {
     @apply lg:max-w-5xl;

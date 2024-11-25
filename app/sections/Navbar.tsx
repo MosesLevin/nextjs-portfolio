@@ -20,7 +20,7 @@ function Navbar() {
           { to: 'home', label: 'Home', duration: 500 },
           { to: 'projects', label: 'Projects', duration: 700 },
           { to: 'about', label: 'About', duration: 800 },
-          { to: 'contact', label: 'Contact', duration: 1000 },
+          { to: 'contact', label: 'Contact', duration: 700 },
         ].map(({ to, label, duration }) => (
           <Link
             key={to}
