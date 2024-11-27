@@ -2,12 +2,22 @@
 import Card from '@/components/Card'
 import SectionHeader from '@/components/SectionHeader'
 import Image from 'next/image'
-import IconPlaceholder from '@/assets/github.svg'
-import otherIconPlaceholder from '@/assets/arrow-diag.svg'
+import GithubIcon from '@/assets/icons/github.svg'
+import TypeScriptIcon from '@/assets/icons/typescript.svg'
+import HtmlIcon from '@/assets/icons/html5.svg'
+import JavaScriptIcon from '@/assets/icons/javascript.svg'
+import ReactIcon from '@/assets/icons/react.svg'
+import NodeIcon from '@/assets/icons/node.svg'
+import DatabaseIcon from '@/assets/icons/sql.svg'
+import Css3Icon from '@/assets/icons/css3.svg'
+import BrowserIcon from '@/assets/icons/browser.svg'
+import TailwindIcon from '@/assets/icons/tailwind.svg'
+import ShopifyIcon from '@/assets/icons/shopify.svg'
+import FirebaseIcon from '@/assets/icons/firebase.svg'
 import berlinMap2 from '@/assets/berlinMap2.jpg'
 import avatarIcon from '@/assets/MoSmileMemoji.png'
 import CardHeader from '@/components/CardHeader'
-import ToolboxItems from '@/components/ToolboxItems'
+import Toolbox from '@/components/Toolbox'
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import RotatingBookCovers from '@/components/RotatingBookCovers'
@@ -16,35 +26,51 @@ type interfaceToolboxItem = { title: string; iconType: React.ElementType } // Th
 const toolboxItems: interfaceToolboxItem[] = [
   {
     title: 'JavaScript',
-    iconType: IconPlaceholder,
+    iconType: JavaScriptIcon,
   },
   {
     title: 'HTML5',
-    iconType: otherIconPlaceholder,
+    iconType: HtmlIcon,
   },
   {
     title: 'CSS3',
-    iconType: IconPlaceholder,
+    iconType: Css3Icon,
   },
   {
     title: 'React',
-    iconType: IconPlaceholder,
+    iconType: ReactIcon,
   },
   {
     title: 'TypeScript',
-    iconType: IconPlaceholder,
+    iconType: TypeScriptIcon,
+  },
+  {
+    title: 'Node.js',
+    iconType: NodeIcon,
+  },
+  {
+    title: 'SQL',
+    iconType: DatabaseIcon,
   },
   {
     title: 'Github',
-    iconType: IconPlaceholder,
+    iconType: GithubIcon,
   },
   {
-    title: 'Github1',
-    iconType: IconPlaceholder,
+    title: 'DevTools',
+    iconType: BrowserIcon,
   },
   {
-    title: 'TechNo12',
-    iconType: IconPlaceholder,
+    title: 'Tailwind',
+    iconType: TailwindIcon,
+  },
+  {
+    title: 'Shopify',
+    iconType: ShopifyIcon,
+  },
+  {
+    title: 'Firebase',
+    iconType: FirebaseIcon,
   },
 ]
 
@@ -124,12 +150,12 @@ export default function About() {
                 experiences."
                 className=""
               />
-              <ToolboxItems
+              <Toolbox
                 items={toolboxItems}
                 className=""
                 itemsWrapperClassName="animate-left-movement [animation-duration:25s] hover:[animation-play-state:paused]"
               />
-              <ToolboxItems
+              <Toolbox
                 items={toolboxItems}
                 className="mt-6"
                 itemsWrapperClassName="animate-right-movement [animation-duration:25s] hover:[animation-play-state:paused]"

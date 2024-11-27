@@ -1,4 +1,4 @@
-import Arrow from '@/assets/arrow-diag.svg'
+import Arrow from '@/assets/icons/arrow-diag.svg'
 import whiteNoise from '@/assets/WhiteNoise.jpg'
 import Card from '@/components/Card'
 import ContactForm from '@/components/ContactForm'
@@ -28,13 +28,15 @@ export default function Contact() {
                   </p>
                 </div>
                 <div>
-                  <button
-                    className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 
-                  button-animation focus:ring-1 focus-visible:ring-white hover:ring-gray-900"
-                  >
-                    <span className="font-semibold">E-Mail</span>
-                    <Arrow className="rotate-45 fill-white size-4" />
-                  </button>
+                  <a href="mailto:moses.levin14@gmail.com">
+                    <button
+                      className=" text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 
+                  button-animation focus:ring-1 focus-visible:ring-white hover:ring-gray-900 hover:ring-2"
+                    >
+                      <span className="font-semibold">E-Mail</span>
+                      <Arrow className="rotate-45 fill-white size-4" />
+                    </button>
+                  </a>
                 </div>
               </div>
               {/* contact form */}
@@ -47,3 +49,17 @@ export default function Contact() {
     </section>
   )
 }
+
+// {/* <a
+// href={link.href}
+// key={link.title}
+// target="_blank"
+// className="inline-flex items-center gap-2 hover:underline underline-offset-4"
+// >
+// {/* added declaration for SVGR in typescript in root so we can use link.icon */}
+// <span className="font-semibold">{link.title}</span>
+// <StackIcons
+//   component={link.icon}
+//   size="size-5 button-animation "
+// />
+// </a> */}

@@ -49,7 +49,7 @@ const ContactForm: React.FC = () => {
         <h2 className="text-2xl font-serif mb-4 text-white/90 text-center">
           Contact Me
         </h2>
-        <div className="mb-4">
+        <div className="mb-4 md:mb-6">
           <label
             htmlFor="name"
             className="block text-base font-semibold text-white/60"
@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
             className="mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 focus:outline-none focus ring-2 ring-sky-400 focus:ring-sky-300 focus:ring-4 hover:ring-sky-400 hover:ring-4 focus-within:hover:ring-sky-300 focus-within:hover:ring-4"
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-4 md:mb-6">
           <label
             htmlFor="email"
             className="block text-base font-semibold text-white/60"
@@ -85,7 +85,7 @@ const ContactForm: React.FC = () => {
             // focus:outline-none focus ring-2 focus:ring-sky-400 focus:border-emerald-300
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-4 md:mb-6">
           <label
             htmlFor="message"
             className="block text-base font-semibold text-white/60"
@@ -106,7 +106,7 @@ const ContactForm: React.FC = () => {
           type="submit"
           disabled={isSubmitting}
           className="w-full md:w-[420px] lg:w-[550px] py-3 px-3 bg-gradient-to-r mt-4 from-emerald-300 to-sky-400 text-gray-950 font-semibold 
-          button-animation focus:ring-1 focus-visible:ring-white hover:ring-2 hover:ring-sky-200 hover:text-black"
+          button-animation focus:ring-1 focus-visible:ring-white hover:ring-2 hover:ring-sky-200 hover:text-black "
         >
           {isSubmitting ? 'Sending...' : 'Send'}
         </button>

@@ -2,7 +2,7 @@ import { twMerge } from 'tailwind-merge'
 import StackIcons from './StackIcons'
 import { Fragment } from 'react'
 
-export default function ToolboxItems({
+export default function Toolbox({
   items,
   className,
   itemsWrapperClassName,
