@@ -1,7 +1,7 @@
 'use client'
-import ArrowDown from '@/assets/arrow-diag.svg'
+import ArrowDown from '@/assets/icons/arrow-diag.svg'
 import { Link } from 'react-scroll'
-import Envelope from '@/assets/envelope.svg'
+import Envelope from '@/assets/icons/envelope.svg'
 
 export default function HeroButtons() {
   return (
@@ -9,7 +9,7 @@ export default function HeroButtons() {
       <Link
         to="projects"
         smooth={true}
-        className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl cursor-pointer  hover:bg-white/5 hover:text-white transition"
+        className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl cursor-pointer hover:bg-white/5 hover:text-white transition"
       >
         <div className="font-semibold">Explore My Work</div>
         <ArrowDown className="rotate-180 size-4 fill-white" />
@@ -19,7 +19,7 @@ export default function HeroButtons() {
         smooth={true}
         duration={900}
         className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer
-         hover:text-black transition button-animation "
+         hover:text-black transition button-animation hover:ring-2 hover:ring-white/30"
       >
         <Envelope className="size-5 fill-black stroke " />
         <span className="font-semibold">Write to me</span>
