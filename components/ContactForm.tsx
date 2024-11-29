@@ -62,7 +62,7 @@ const ContactForm: React.FC = () => {
     }
 
     if (!isValidMessage(formData.message)) {
-      setMessageError('Message must be at least 20 characters long.')
+      setMessageError('Message must be at least 14 characters long.')
       return
     }
 
@@ -84,6 +84,7 @@ const ContactForm: React.FC = () => {
       setIsSubmitting(false)
     }
   }
+
   // form takes input with onChange={handleChange} and setState value={formData.input}
   return (
     <form onSubmit={handleSubmit} className="mx-6">
