@@ -14,6 +14,8 @@ import BrowserIcon from '@/assets/icons/browser.svg'
 import TailwindIcon from '@/assets/icons/tailwind.svg'
 import ShopifyIcon from '@/assets/icons/shopify.svg'
 import FirebaseIcon from '@/assets/icons/firebase.svg'
+import CopilotIcon from '@/assets/icons/copilot.svg'
+import GptIcon from '@/assets/icons/gpt.svg'
 import berlinMap2 from '@/assets/berlinMap2.jpg'
 import avatarIcon from '@/assets/MoSmileMemoji.png'
 import CardHeader from '@/components/CardHeader'
@@ -23,6 +25,7 @@ import { useRef } from 'react'
 import RotatingBookCovers from '@/components/RotatingBookCovers'
 
 type interfaceToolboxItem = { title: string; iconType: React.ElementType } // This ensures `iconType` is "typed" correctly
+// "Stack" or toolbox - all could be pulled from a database if larger projectand not hard coded
 const toolboxItems: interfaceToolboxItem[] = [
   {
     title: 'JavaScript',
@@ -57,6 +60,10 @@ const toolboxItems: interfaceToolboxItem[] = [
     iconType: GithubIcon,
   },
   {
+    title: 'GPT',
+    iconType: GptIcon,
+  },
+  {
     title: 'DevTools',
     iconType: BrowserIcon,
   },
@@ -69,11 +76,15 @@ const toolboxItems: interfaceToolboxItem[] = [
     iconType: ShopifyIcon,
   },
   {
+    title: 'Copilot',
+    iconType: CopilotIcon,
+  },
+  {
     title: 'Firebase',
     iconType: FirebaseIcon,
   },
 ]
-
+// hobbies - all could be in database if larger project
 const hobbies = [
   {
     title: 'Hiking',
