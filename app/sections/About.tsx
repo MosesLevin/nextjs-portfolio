@@ -87,12 +87,6 @@ const toolboxItems: interfaceToolboxItem[] = [
 // hobbies - all could be in database if larger project
 const hobbies = [
   {
-    title: 'Hiking',
-    emoji: '🏔️',
-    left: '48%',
-    top: '7%',
-  },
-  {
     title: 'Meditating',
     emoji: '🧘🏻',
     left: '1%',
@@ -131,10 +125,16 @@ const hobbies = [
     top: '25%',
   },
   {
+    title: 'Hiking',
+    emoji: '🏔️',
+    left: '48%',
+    top: '7%',
+  },
+  {
     title: 'Traveling',
     emoji: '✈️',
-    left: '65%',
-    top: '24%',
+    left: '58%',
+    top: '16%',
   },
 ]
 
@@ -152,13 +152,11 @@ export default function About() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             {/*Section WHAT I READ */}
             <RotatingBookCovers />
-
             {/* Section TOOLBOX*/}
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Toolbox"
-                description="Explore the Technologies and tools I use to create online
-                experiences."
+                description="Explore the Technologies and tools I use to bring Websites & Apps to life"
                 className=""
               />
               <Toolbox
@@ -178,8 +176,8 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:grid-cols-3">
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="Beyond the Code"
-                description="Explore my interests and hobbies outside of the digital world."
+                title="When I'm not Coding"
+                description="Explore my interests and hobbies"
                 className="px-6 py-6"
               />
               {/* giving a ref to the parent div and telling framer-motion "drag" that that ref is the constraint */}

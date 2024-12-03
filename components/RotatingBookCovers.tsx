@@ -39,7 +39,7 @@ const RotatingBookCovers = () => {
     <Card className="h-[320px] md:col-span-2 lg:col-span-1">
       <CardHeader
         title="What I read"
-        description="Explore the books shaping my perspectives."
+        description="Explore books that shaped my perspectives"
         className2="md:whitespace-nowrap"
       />
       <div className="relative w-40 h-60 mx-auto mt-2 md:mt-0 overflow-hidden">
