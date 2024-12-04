@@ -1,6 +1,5 @@
-import project1Placeholder from '@/assets/img1.webp'
-import project2Placeholder from '@/assets/img2.webp'
-import project3Placeholder from '@/assets/img3.webp'
+import project1Placeholder from '@/assets/BuildingProjectsImg.png'
+
 import Image from 'next/image'
 import CheckmarkIcon from '@/assets/icons/checkmark.svg'
 import ArrowDiagonal from '@/assets/icons/arrow-diag.svg'
@@ -28,7 +27,7 @@ const portfolioProject = [
       { title: 'Increase mobile traffic by 100%' },
     ],
     link: 'www.google.com',
-    image: project2Placeholder,
+    image: project1Placeholder,
   },
   {
     year: '2020',
@@ -39,7 +38,7 @@ const portfolioProject = [
       { title: 'Increase mobile traffic by 100%' },
     ],
     link: 'www.google.com',
-    image: project3Placeholder,
+    image: project1Placeholder,
   },
 ]
 
