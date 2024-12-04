@@ -146,7 +146,7 @@ export default function About() {
         <SectionHeader
           eyebrow="About Me"
           title="A Glimpse Into My World"
-          description="Learn more about what I like doing, and what inspires me."
+          description="Learn more about what I like doing, and what drives me."
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
@@ -156,7 +156,7 @@ export default function About() {
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Toolbox"
-                description="Explore the Technologies and tools I use to bring Websites & Apps to life"
+                description="The technologies and tools I use to bring Websites & Apps to life"
                 className=""
               />
               <Toolbox
@@ -177,7 +177,7 @@ export default function About() {
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="When I'm not Coding"
-                description="Explore my interests and hobbies"
+                description="My interests and hobbies other than Tech"
                 className="px-6 py-6"
               />
               {/* giving a ref to the parent div and telling framer-motion "drag" that that ref is the constraint */}

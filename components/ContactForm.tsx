@@ -90,7 +90,7 @@ const ContactForm: React.FC = () => {
     <form onSubmit={handleSubmit} className="mx-6">
       <div className="container py-10 md:flex md:flex-col md:items-center md:justify-center ">
         <h2 className="text-2xl font-serif mb-4 text-white/90 text-center">
-          Contact Me
+          Write a quick message
         </h2>
         <div className="mb-4 md:mb-6">
           <label

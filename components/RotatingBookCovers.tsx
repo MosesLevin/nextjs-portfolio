@@ -3,18 +3,34 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import Card from './Card'
 import CardHeader from './CardHeader'
-import BookCover from '@/assets/book-alan-watts.jpeg'
+import AlanBookCover from '@/assets/Book7-AlanWatts.jpeg'
+import CosmosBookCover from '@/assets/Book6-Cosmos.jpg'
+import NatGeoBookCover from '@/assets/Book2-natgeo.jpg'
+import PoohBookCover from '@/assets/Book4-Pooh.jpg'
+import RiedelBookCover from '@/assets/Book3-AnorganischeChemie.jpg'
+import HarryPotterBookCover from '@/assets/Book5-HarryPotter.jpg'
+import PragmaticProgrammerBookCover from '@/assets/Book1-PragmaticProgrammer.jpg'
+import LifeOfPiBookCover from '@/assets/Book8-LifeOfPi.jpg'
 
-// this was chatGPT, he said its more lightweight and ssr friendly than using "swiper" which i know.
+// this was good ol friend, he said its more lightweight and ssr friendly than using "swiper" which i know.
 
-const bookCovers = [BookCover, BookCover, BookCover]
+const bookCovers = [
+  AlanBookCover,
+  NatGeoBookCover,
+  PragmaticProgrammerBookCover,
+  CosmosBookCover,
+  HarryPotterBookCover,
+  RiedelBookCover,
+  LifeOfPiBookCover,
+  PoohBookCover,
+]
 const RotatingBookCovers = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % bookCovers.length)
-    }, 8000) // Change image every 3 seconds
+    }, 8000) // Change image every 8 seconds
     return () => clearInterval(interval) // Cleanup on unmount
   }, [])
 

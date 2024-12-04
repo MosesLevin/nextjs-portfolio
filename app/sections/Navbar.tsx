@@ -14,7 +14,7 @@ function Navbar() {
     'bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900'
 
   return (
-    <div className="flex justify-center items-center fixed top-3 w-full z-10">
+    <div className="flex justify-center items-center fixed md:top-3 w-full z-10">
       <nav className="flex gap-1 p-0.5 border-white/15 rounded-full border-2 bg-white/10 backdrop-blur">
         {[
           { to: 'home', label: 'Home', duration: 500 },
