@@ -89,13 +89,13 @@ const ContactForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit} className="mx-6">
       <div className="container py-10 md:flex md:flex-col md:items-center md:justify-center ">
-        <h2 className="text-2xl font-serif mb-4 text-white/90 text-center">
+        <h2 className="text-2xl font-serif mb-4 dark:text-white/90 text-black/90 text-center">
           Write a quick message
         </h2>
         <div className="mb-4 md:mb-6">
           <label
             htmlFor="name"
-            className="block text-base font-semibold text-white/60"
+            className="block text-base font-semibold dark:text-white/60 text-black/60"
           >
             Name
           </label>
@@ -106,13 +106,13 @@ const ContactForm: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 focus:outline-none focus ring-2 ring-sky-400 focus:ring-sky-300 focus:ring-4 hover:ring-sky-400 hover:ring-4 focus-within:hover:ring-sky-300 focus-within:hover:ring-4"
+            className="mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 focus:ring-sky-300 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4"
           />
         </div>
         <div className="mb-4 md:mb-6">
           <label
             htmlFor="email"
-            className="block text-base font-semibold text-white/60"
+            className="block text-base font-semibold dark:text-white/60 text-black/60"
           >
             Email
           </label>
@@ -124,7 +124,7 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className={`mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 focus:outline-none focus ring-2 ring-sky-400 focus:ring-sky-300 focus:ring-4 hover:ring-sky-400 hover:ring-4 focus-within:hover:ring-sky-300 focus-within:hover:ring-4 ${
+            className={`mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 focus:ring-sky-300 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4 ${
               emailError
                 ? 'border-red-500 focus:ring-red-500/70 focus:ring-2'
                 : ''
@@ -137,7 +137,7 @@ const ContactForm: React.FC = () => {
         <div className="mb-4 md:mb-6">
           <label
             htmlFor="message"
-            className="block text-base font-semibold text-white/60"
+            className="block text-base font-semibold dark:text-white/60 text-black/60"
           >
             Message
           </label>
@@ -150,7 +150,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className={`mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 focus:outline-none focus ring-2 ring-sky-400 focus:ring-sky-300 focus:ring-4 hover:ring-sky-400 hover:ring-4 focus-within:hover:ring-sky-300 focus-within:hover:ring-4 ${
+            className={`mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 focus:ring-sky-300 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4 ${
               messageError
                 ? 'border-red-500 focus:ring-red-500/70 focus:ring-2'
                 : ''
@@ -164,8 +164,8 @@ const ContactForm: React.FC = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full md:w-[420px] lg:w-[550px] py-3 px-3 bg-gradient-to-r mt-4 from-emerald-300 to-sky-400 text-gray-950 font-semibold
-          button-animation focus:ring-1 focus-visible:ring-white hover:ring-2 hover:ring-sky-200 hover:text-black "
+          className="w-full md:w-[420px] lg:w-[550px] py-3 px-3 bg-gradient-to-r mt-4 from-amber-300 dark:from-emerald-300 to-orange-500 dark:to-sky-400 text-gray-950 font-semibold
+          button-animation focus:ring-1 dark:focus-visible:ring-white focus-visible:ring-black hover:ring-2 dark:hover:ring-sky-200 hover:ring-amber-300 hover:text-black "
         >
           {isSubmitting ? 'Sending...' : 'Send'}
         </button>

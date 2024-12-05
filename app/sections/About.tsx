@@ -176,7 +176,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:grid-cols-3">
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="When I'm not Coding"
+                title="Aside from coding"
                 description="My interests and hobbies other than Tech"
                 className="px-6 py-6"
               />
@@ -186,7 +186,7 @@ export default function About() {
                   // adding framer motion for movement of the items inside the parent div, changing next component to client component
                   <motion.div
                     key={hobby.title}
-                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
+                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-amber-300 dark:from-emerald-300 to-orange-400 dark:to-sky-400  rounded-full py-1.5 absolute"
                     style={{
                       left: hobby.left,
                       top: hobby.top,
@@ -215,8 +215,8 @@ export default function About() {
               />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-24 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
                 {/* animate ping of div "under" image */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2.5s]"></div>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r dark:from-emerald-300 dark:to-sky-400 from-amber-300 to-orange-500 -z-20 animate-ping [animation-duration:2.5s]"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r dark:from-emerald-300 dark:to-sky-400 from-amber-300 to-orange-500 -z-10"></div>
                 <Image
                   src={avatarIcon}
                   alt="Smiling Web Developer"

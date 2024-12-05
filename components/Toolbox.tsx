@@ -37,10 +37,12 @@ since the icons are components with svgr/webpack we need to "feed a component" w
             {items.map((item) => (
               <div
                 key={item.title}
-                className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
+                className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 dark:outline-white/10 outline-black/10 rounded-lg"
               >
                 <StackIcons component={item.iconType} />
-                <span className="font-semibold">{item.title}</span>
+                <span className="font-semibold dark:text-white text-black/90">
+                  {item.title}
+                </span>
               </div>
             ))}
           </Fragment>

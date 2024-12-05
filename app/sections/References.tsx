@@ -65,13 +65,15 @@ export default function References() {
                         />
                       </div>
                       <div>
-                        <div className="font-semibold">{reference.name}</div>
-                        <div className="text-sm text-white/40">
+                        <div className="font-semibold dark:text-white text-black">
+                          {reference.name}
+                        </div>
+                        <div className="text-sm dark:text-white/40 text-black/60">
                           {reference.position}
                         </div>
                       </div>
                     </div>
-                    <p className="mt-4 md:mt-6 text-sm md:text-base">
+                    <p className="mt-4 md:mt-6 text-sm md:text-base dark:text-white text-black">
                       {reference.text}
                     </p>
                   </Card>

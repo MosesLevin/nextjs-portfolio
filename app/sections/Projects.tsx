@@ -67,32 +67,32 @@ function Projects() {
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   {/*!!! div to hold gradient, project title line and secondary info all to be changed!!!*/}
-                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                  <div className="bg-gradient-to-r from-amber-300 dark:from-emerald-300 to-orange-400 dark:to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text ">
                     <span>{project.title}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
                   </div>
                   {/* project */}
-                  <h3 className="font-serif text-2xl md:text-4xl mt-2 md:mt-5">
+                  <h3 className="font-serif text-2xl md:text-4xl mt-2 md:mt-5 dark:text-white text-black ">
                     {project.title}
                   </h3>
-                  <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+                  <hr className="border-t-2 dark:border-white/5 border-black/5 mt-4 md:mt-5" />
                   {/* map over objects nested array for more info */}
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.result.map((result) => (
                       <li
                         key={result.title}
-                        className="flex gap-2 text-sm md:text-base text-white/50"
+                        className="flex gap-2 text-sm md:text-base dark:text-white/50 text-black/60"
                       >
-                        <CheckmarkIcon className="size-4 md:size-6 text-white/50" />
+                        <CheckmarkIcon className="size-4 md:size-6 dark:text-white/50 text-black/60" />
                         <span>{result.title}</span>
                       </li>
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="bg-white/90 text-gray-950 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 hover:bg-white/95 hover:text-black transition duration-[125ms] hover:ring-1 hover:ring-white/50 button-animation hover:scale-100">
+                    <button className="dark:bg-white/90 bg-black/80 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/95 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 hover:ring-white/50 button-animation hover:scale-100">
                       <span>Visit Live Site</span>
-                      <ArrowDiagonal className="rotate-45 size-4" />
+                      <ArrowDiagonal className="rotate-45 size-4 dark:fill-black fill-white" />
                     </button>
                   </a>
                 </div>

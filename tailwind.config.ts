@@ -8,6 +8,7 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    // custom theme
     screens: {
       sm: '375px',
       md: '768px',
@@ -20,7 +21,30 @@ const config: Config = {
         md: '2rem',
       },
     },
+    // custom stuff
     extend: {
+      colors: {
+        // color1: '#117EA0',
+        // color2: '#9dc9d0',
+        color3: '#f2e3bf',
+        // color4: '#efc219',
+        color1: '#fefae0',
+        color2: '#faedcd',
+        color7: '#D18445',
+
+        // color4: '#cdc4bf',
+        color4: '#978c8a',
+
+        color5: '#e9edc9',
+        color6: '#ccd5ae',
+        // color1: '#fefae0',
+        // color2: '#faedcd',
+        // color3: '#d4a373',
+        // color4: '#978c8a',
+        // color5: '#e9edc9',
+        // color6: '#ccd5ae',
+      },
+
       fontFamily: {
         sans: 'var(--font-sans)',
         serif: 'var(--font-serif)',
@@ -60,5 +84,7 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }
+
 export default config

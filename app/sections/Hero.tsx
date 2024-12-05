@@ -133,21 +133,21 @@ function Hero() {
             alt="Web Developer coding on PC"
           />
 
-          <div className="inline-flex bg-gray-950 border border-gray-800 px-4 py-1.5 items-center gap-4 rounded-lg">
+          <div className="inline-flex dark:bg-gray-950 bg-color3  border dark:border-gray-800 border-color7/50 px-4 py-1.5 items-center gap-4 rounded-lg">
             <div className="relative bg-green-500 size-2.5 rounded-full ">
               <div className="absolute bg-green-500  inset-0 rounded-full animate-ping-lg"></div>
             </div>
 
-            <div className="text-sm font-medium">
+            <div className="text-sm font-medium dark:text-white text-black">
               Available for new projects
             </div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide dark:text-white text-black ">
             Building Websites very good yes
           </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg ">
+          <p className="mt-4 text-center dark:text-white/60 text-black/60 md:text-lg ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
             amet enim eget risus efficitur malesuada. Praesent eu nulla
             venenatis, tincidunt quam nec, convallis mi.

@@ -9,19 +9,21 @@ export default function HeroButtons() {
       <Link
         to="projects"
         smooth={true}
-        className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl cursor-pointer hover:bg-white/5 hover:text-white transition"
+        className="inline-flex items-center gap-2 border dark:border-white/15 border-black/20 px-6 h-12 rounded-xl cursor-pointer dark:hover:bg-white/5  hover:bg-color3 transition"
       >
-        <div className="font-semibold">Explore My Work</div>
-        <ArrowDown className="rotate-180 size-4 fill-white" />
+        <div className="font-semibold text-black dark:text-white">
+          Explore My Work
+        </div>
+        <ArrowDown className="rotate-180 size-4 dark:fill-white fill-black" />
       </Link>
       <Link
         to="contact"
         smooth={true}
         duration={900}
-        className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer
-         hover:text-black transition button-animation hover:ring-2 hover:ring-white/30"
+        className="inline-flex items-center gap-2 border dark:border-white border-black dark:bg-white bg-black dark:text-gray-900 text-white h-12 px-6 rounded-xl cursor-pointer
+         dark:hover:text-black hover:text-white transition button-animation hover:ring-2 hover:ring-white/30"
       >
-        <Envelope className="size-5 fill-black stroke " />
+        <Envelope className="size-5 dark:fill-black fill-white stroke " />
         <span className="font-semibold">Write to me</span>
       </Link>
     </div>

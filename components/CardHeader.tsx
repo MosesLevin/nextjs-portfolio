@@ -16,9 +16,11 @@ export default function CardHeader({
     <div className={twMerge('flex flex-col p-6 md:py-8 md:px-10', className)}>
       <div className={twMerge('inline-flex items-center gap-2', className2)}>
         <Stern className="size-9 text-emerald-300" />
-        <h3 className="font-serif text-3xl ">{title}</h3>
+        <h3 className="font-serif text-3xl dark:text-white text-black">
+          {title}
+        </h3>
       </div>
-      <p className="text-sm text-white/60 mt-2 lg:text-base lg:max-w-xs">
+      <p className="text-sm dark:text-white/60 text-black/60 mt-2 lg:text-base lg:max-w-xs">
         {description}
       </p>
     </div>
