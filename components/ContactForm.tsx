@@ -106,7 +106,7 @@ const ContactForm: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 focus:ring-sky-300 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4"
+            className="mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 dark:focus:ring-sky-300 focus:ring-orange-400 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4"
           />
         </div>
         <div className="mb-4 md:mb-6">
@@ -124,7 +124,7 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className={`mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 focus:ring-sky-300 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4 ${
+            className={`mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 dark:focus:ring-sky-300 focus:ring-orange-400 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4 ${
               emailError
                 ? 'border-red-500 focus:ring-red-500/70 focus:ring-2'
                 : ''
@@ -150,7 +150,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className={`mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 focus:ring-sky-300 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4 ${
+            className={`mt-1 block w-full md:w-[420px] lg:w-[550px] px-3 py-2 border rounded-md shadow-sm text-gray-950 dark:text-white focus:outline-none focus ring-2 dark:ring-sky-400 ring-amber-300 dark:focus:ring-sky-300 focus:ring-orange-400 focus:ring-4 dark:hover:ring-sky-400 hover:ring-amber-300 hover:ring-4 dark:focus-within:hover:ring-sky-300 focus-within:hover:ring-orange-400 focus-within:hover:ring-4 ${
               messageError
                 ? 'border-red-500 focus:ring-red-500/70 focus:ring-2'
                 : ''

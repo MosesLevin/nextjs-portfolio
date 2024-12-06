@@ -1,10 +1,13 @@
 import heroImage from '@/assets/MoComputerMemoji.png'
 import Image from 'next/image'
 import whiteNoise from '@/assets/WhiteNoise.jpg'
-import Stern from '@/assets/Stern.svg'
-import SternWeit from '@/assets/SternWeit.svg'
 import HeroSolarSystem from '@/components/HeroSolarSystem'
 import HeroButtons from '@/components/HeroButtons'
+// created a few components for svg theme toggle so that not all of hero is client
+import HeroLargeThemeSvg from '@/components/HeroLargeThemeSvg'
+import HeroSmallThemeSvg from '@/components/HeroSmallThemeSvg'
+
+//
 
 function Hero() {
   return (
@@ -33,7 +36,10 @@ function Hero() {
           shouldSpin
           spinDuration="3s"
         >
-          <SternWeit className="size-5 text-emerald-300/20" />
+          <HeroSmallThemeSvg
+            darkClassName="size-8 text-emerald-300/20"
+            lightClassName="size-8 text-amber-500/30"
+          />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={430}
@@ -43,7 +49,10 @@ function Hero() {
           shouldSpin
           spinDuration="3s"
         >
-          <SternWeit className="size-8 text-emerald-300/20" />
+          <HeroSmallThemeSvg
+            darkClassName="size-8 text-emerald-300/20"
+            lightClassName="size-8 text-amber-500/30"
+          />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={520}
@@ -51,7 +60,7 @@ function Hero() {
           shouldOrbit
           orbitDuration="30s"
         >
-          <div className="size-2 rounded-full bg-emerald-300/20" />
+          <div className="size-2 rounded-full dark:bg-emerald-300/20 bg-amber-500/30" />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={530}
@@ -61,7 +70,10 @@ function Hero() {
           shouldSpin
           spinDuration="3s"
         >
-          <SternWeit className="size-10 text-emerald-300/20" />
+          <HeroSmallThemeSvg
+            darkClassName="size-10 text-emerald-300/20"
+            lightClassName="size-10 text-amber-500/30"
+          />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={550}
@@ -71,7 +83,10 @@ function Hero() {
           shouldSpin
           spinDuration="7s"
         >
-          <Stern className="size-12 text-emerald-300" />
+          <HeroLargeThemeSvg
+            darkClassName="size-12 text-emerald-300"
+            lightClassName="size-12 text-amber-500"
+          />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={590}
@@ -81,7 +96,10 @@ function Hero() {
           shouldSpin
           spinDuration="8s"
         >
-          <Stern className="size-8 text-emerald-300" />
+          <HeroLargeThemeSvg
+            darkClassName="size-8 text-emerald-300"
+            lightClassName="size-8 text-amber-500"
+          />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={650}
@@ -90,7 +108,7 @@ function Hero() {
           orbitDuration="42s"
           spinDuration=""
         >
-          <div className="size-2 rounded-full bg-emerald-300/20" />
+          <div className="size-2 rounded-full dark:bg-emerald-300/20 bg-amber-500/30" />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={710}
@@ -100,7 +118,10 @@ function Hero() {
           shouldSpin
           spinDuration="3s"
         >
-          <SternWeit className="size-14 text-emerald-300/20" />
+          <HeroSmallThemeSvg
+            darkClassName="size-14 text-emerald-300/20"
+            lightClassName="size-14 text-amber-500/30"
+          />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={720}
@@ -109,7 +130,7 @@ function Hero() {
           orbitDuration="48s"
           spinDuration=""
         >
-          <div className="size-3 rounded-full bg-emerald-300/20" />
+          <div className="size-3 rounded-full dark:bg-emerald-300/20 bg-amber-500/30" />
         </HeroSolarSystem>
         <HeroSolarSystem
           size={800}
@@ -119,7 +140,10 @@ function Hero() {
           shouldSpin
           spinDuration="6s"
         >
-          <Stern className="size-28 text-emerald-300" />
+          <HeroLargeThemeSvg
+            darkClassName="size-28 text-emerald-300"
+            lightClassName="size-28 text-amber-500"
+          />
         </HeroSolarSystem>
         {/* low opacity svgs */}
 
