@@ -59,6 +59,7 @@ function Projects() {
             <Card
               key={project.title}
               className=" px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16 "
+              // style to calc "card stacking" distance from previos card on scroll down
               style={{
                 top: `calc(64px + ${projectIndex * 50}px)`,
               }}
@@ -67,7 +68,7 @@ function Projects() {
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   {/*!!! div to hold gradient, project title line and secondary info all to be changed!!!*/}
-                  <div className="bg-gradient-to-r from-amber-300 dark:from-emerald-300 to-orange-400 dark:to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text ">
+                  <div className="bg-gradient-to-r from-orange-400 dark:from-emerald-300 to-amber-300 dark:to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text text-shadow dark:text-shadow-none">
                     <span>{project.title}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
