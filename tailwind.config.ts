@@ -29,9 +29,8 @@ const config: Config = {
         brown2: '#faedcd',
         brown3: '#f2e3bf',
         brown4: '#d5c294',
-        brown5: '#f2e3bf',
-        color7: '#D18445',
-        brown8: '#926430',
+        brown5: '#D18445',
+
         gray8: '#2b2a33',
       },
 

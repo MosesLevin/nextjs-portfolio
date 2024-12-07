@@ -1,7 +1,7 @@
-import Client1 from '@/assets/Client-1-memoji.png'
-import Client3 from '@/assets/Client-3-memoji.png'
-import Client4 from '@/assets/Client-4-memoji.png'
-import Client5 from '@/assets/Client-5-memoji.png'
+import Client1 from '@/assets/memojis/Client-1-memoji.png'
+import Client3 from '@/assets/memojis/Client-3-memoji.png'
+import Client4 from '@/assets/memojis/Client-4-memoji.png'
+import Client5 from '@/assets/memojis/Client-5-memoji.png'
 import SectionHeader from '@/components/SectionHeader'
 import Image from 'next/image'
 import Card from '@/components/Card'
@@ -57,7 +57,7 @@ export default function References() {
                     className="max-w-xs md:max-w-md p-6 md:p-8 hover:-rotate-3 transition duration-300"
                   >
                     <div className="flex gap-4 items-center">
-                      <div className="size-14 dark:bg-gray-600 bg-color7/60 inline-flex rounded-full items-center justify-center flex-shrink-0">
+                      <div className="size-14 dark:bg-gray-600 bg-brown5/60 inline-flex rounded-full items-center justify-center flex-shrink-0">
                         <Image
                           src={reference.avatar}
                           alt={reference.name}
