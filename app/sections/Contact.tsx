@@ -30,8 +30,8 @@ export default function Contact() {
                 <div>
                   <a href="mailto:moses.levin14@gmail.com">
                     <button
-                      className=" text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 
-                  button-animation focus:ring-1 focus-visible:ring-white hover:ring-gray-900 hover:ring-2"
+                      className=" text-white bg-black inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 
+                  button-animation ring-2 ring-gray-800 hover:ring-gray-800 hover:ring-4"
                     >
                       <span className="font-semibold">E-Mail</span>
                       <Arrow className="rotate-45 fill-white size-4" />

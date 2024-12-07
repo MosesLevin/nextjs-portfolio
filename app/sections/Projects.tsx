@@ -91,7 +91,7 @@ function Projects() {
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="dark:bg-white/90 bg-black/80 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/95 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 hover:ring-white/50 button-animation hover:scale-100">
+                    <button className="dark:bg-white/90 bg-black/85 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/90 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 dark:hover:ring-white/50 hover:ring-black/50 button-animation hover:scale-100">
                       <span>Visit Live Site</span>
                       <ArrowDiagonal className="rotate-45 size-4 dark:fill-black fill-white" />
                     </button>
