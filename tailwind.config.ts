@@ -24,25 +24,15 @@ const config: Config = {
     // custom stuff
     extend: {
       colors: {
-        // color1: '#117EA0',
-        // color2: '#9dc9d0',
-        color3: '#f2e3bf',
-        // color4: '#efc219',
-        color1: '#fefae0',
-        color2: '#faedcd',
+        brown0: '#fffaf3',
+        brown1: '#fefae0',
+        brown2: '#faedcd',
+        brown3: '#f2e3bf',
+        brown4: '#d5c294',
+        brown5: '#f2e3bf',
         color7: '#D18445',
-
-        // color4: '#cdc4bf',
-        color4: '#978c8a',
-
-        color5: '#e9edc9',
-        color6: '#ccd5ae',
-        // color1: '#fefae0',
-        // color2: '#faedcd',
-        // color3: '#d4a373',
-        // color4: '#978c8a',
-        // color5: '#e9edc9',
-        // color6: '#ccd5ae',
+        brown8: '#926430',
+        gray8: '#2b2a33',
       },
 
       fontFamily: {

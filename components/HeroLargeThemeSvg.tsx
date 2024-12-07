@@ -1,5 +1,6 @@
 'use client'
 import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
 import Stern from '@/assets/Stern.svg'
 import Sonne from '@/assets/icons/sonneGros.svg'
 
@@ -12,9 +13,17 @@ export default function HeroLargeThemeSvg({
   lightClassName,
   darkClassName,
 }: HeroLargeThemeSvgProps) {
-  const { theme } = useTheme()
+  //
+  // sets mounted to true once useEffect ran. (setTheme reserved keyword next-themes)
+  const { theme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
-  return theme === 'light' ? (
+  //useEffect only runs when the component IS mounted. When mounted on client, set to true
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) return null
+
+  return resolvedTheme === 'light' ? (
     <Sonne className={lightClassName} />
   ) : (
     <Stern className={darkClassName} />

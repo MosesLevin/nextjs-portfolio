@@ -157,7 +157,7 @@ function Hero() {
             alt="Web Developer coding on PC"
           />
 
-          <div className="inline-flex dark:bg-gray-950 bg-color3  border dark:border-gray-800 border-color7/50 px-4 py-1.5 items-center gap-4 rounded-lg">
+          <div className="inline-flex dark:bg-gray-950 bg-brown3  border dark:border-gray-800 border-color7/50 px-4 py-1.5 items-center gap-4 rounded-lg">
             <div className="relative bg-green-500 size-2.5 rounded-full ">
               <div className="absolute bg-green-500  inset-0 rounded-full animate-ping-lg"></div>
             </div>

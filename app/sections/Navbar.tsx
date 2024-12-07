@@ -12,7 +12,7 @@ function Navbar() {
   const baseClass =
     'nav-item cursor-pointer px-4 py-1.5 rounded-full dark:text-white/70 text-dark/70 text-sm font-semibold dark:hover:bg-white/10 hover:bg-black/10 dark:hover:text-white hover:text-black text-black '
   const activeClass =
-    'dark:bg-white bg-black dark:text-gray-900 text-color1 dark:hover:bg-white/70 hover:bg-black/70 dark:hover:text-gray-900 hover:text-color1'
+    'dark:bg-white bg-black dark:text-gray-900 text-brown1 dark:hover:bg-white/70 hover:bg-black/70 dark:hover:text-gray-900 hover:text-brown1'
 
   return (
     <div className="flex justify-center items-center fixed md:top-3 w-full z-10">

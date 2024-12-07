@@ -9,7 +9,7 @@ export default function HeroButtons() {
       <Link
         to="projects"
         smooth={true}
-        className="inline-flex items-center gap-2 border dark:border-white/15 border-black/20 px-6 h-12 rounded-xl cursor-pointer dark:hover:bg-white/5  hover:bg-color3 transition"
+        className="inline-flex items-center gap-2 border dark:border-white/15 border-black/20 px-6 h-12 rounded-xl cursor-pointer dark:hover:bg-white/5  hover:bg-brown3 transition"
       >
         <div className="font-semibold text-black dark:text-white">
           Explore My Work
