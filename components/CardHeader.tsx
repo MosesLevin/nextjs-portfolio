@@ -1,5 +1,6 @@
 import Stern from '@/assets/Stern.svg'
 import { twMerge } from 'tailwind-merge'
+import HeroLargeThemeSvg from '@/components/HeroLargeThemeSvg'
 
 export default function CardHeader({
   title,
@@ -15,7 +16,11 @@ export default function CardHeader({
   return (
     <div className={twMerge('flex flex-col p-6 md:py-8 md:px-10', className)}>
       <div className={twMerge('inline-flex items-center gap-2', className2)}>
-        <Stern className="size-9 text-emerald-300" />
+        {/* <Stern className="size-9 text-emerald-300" /> */}
+        <HeroLargeThemeSvg
+          darkClassName="size-9 text-emerald-300"
+          lightClassName="size-9 text-amber-500"
+        />
         <h3 className="font-serif text-3xl dark:text-white text-black">
           {title}
         </h3>

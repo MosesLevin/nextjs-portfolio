@@ -12,7 +12,7 @@ export default function Card({
     <>
       <div
         className={twMerge(
-          "dark:bg-gray-800 bg-color2 rounded-3xl relative z-0 after:content-[''] after:absolute after:inset-0 after:z-10 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl dark:after:outline-white/20 after:outline-black/10 after:pointer-events-none overflow-hidden",
+          "dark:bg-gray-800 bg-brown2 rounded-3xl relative z-0 after:content-[''] after:absolute after:inset-0 after:z-10 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl dark:after:outline-white/20 after:outline-black/10 after:pointer-events-none overflow-hidden",
           className
         )}
         {...other}

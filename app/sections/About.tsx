@@ -16,13 +16,13 @@ import ShopifyIcon from '@/assets/icons/shopify.svg'
 import FirebaseIcon from '@/assets/icons/firebase.svg'
 import CopilotIcon from '@/assets/icons/copilot.svg'
 import GptIcon from '@/assets/icons/gpt.svg'
-import berlinMap2 from '@/assets/berlinMap2.jpg'
-import avatarIcon from '@/assets/MoSmileMemoji.png'
+import avatarIcon from '@/assets/memojis/MoSmileMemoji.png'
 import CardHeader from '@/components/CardHeader'
 import Toolbox from '@/components/Toolbox'
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import RotatingBookCovers from '@/components/RotatingBookCovers'
+import MapThemeToggle from '@/components/MapThemeToggle'
 
 type interfaceToolboxItem = { title: string; iconType: React.ElementType } // This ensures `iconType` is "typed" correctly
 // "Stack" or toolbox - all could be pulled from a database if larger projectand not hard coded
@@ -205,15 +205,9 @@ export default function About() {
             {/* Section MAP */}
 
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image
-                src={berlinMap2}
-                alt="local map"
-                className="h-full w-full object-cover object-left-top transform -translate-y-10  scale-125  md:-translate-y-10 md:-translate-x-8 "
-                // style={{
-                //   transform: 'scale(1.5) translateX(16%) translateY(-10%)',
-                // }}
-              />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-24 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              {/* toggle between light and dark mode maps */}
+              <MapThemeToggle />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-24 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full dark:after:outline-gray-950/30 after:outline-brown4/50">
                 {/* animate ping of div "under" image */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r dark:from-emerald-300 dark:to-sky-400 from-amber-300 to-orange-500 -z-20 animate-ping [animation-duration:2.5s]"></div>
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r dark:from-emerald-300 dark:to-sky-400 from-amber-300 to-orange-500 -z-10"></div>

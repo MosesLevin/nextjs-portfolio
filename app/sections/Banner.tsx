@@ -1,4 +1,5 @@
 import Stern from '@/assets/Stern.svg'
+import HeroLargeThemeSvg from '@/components/HeroLargeThemeSvg'
 import { Fragment } from 'react'
 const words = [
   'Performant',
@@ -28,7 +29,10 @@ function Banner() {
                     <span className="text-gray-900 uppercase font-extrabold text-sm">
                       {word}
                     </span>
-                    <Stern className="size-6 text-gray-900 -rotate-12" />
+                    <HeroLargeThemeSvg
+                      darkClassName="size-6 text-gray-900 -rotate-12"
+                      lightClassName="size-6 text-gray-900 -rotate-12"
+                    />
                   </div>
                 ))}
               </Fragment>

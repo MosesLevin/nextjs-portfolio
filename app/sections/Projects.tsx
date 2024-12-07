@@ -59,6 +59,7 @@ function Projects() {
             <Card
               key={project.title}
               className=" px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16 "
+              // style to calc "card stacking" distance from previos card on scroll down
               style={{
                 top: `calc(64px + ${projectIndex * 50}px)`,
               }}
@@ -67,7 +68,7 @@ function Projects() {
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   {/*!!! div to hold gradient, project title line and secondary info all to be changed!!!*/}
-                  <div className="bg-gradient-to-r from-amber-300 dark:from-emerald-300 to-orange-400 dark:to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text ">
+                  <div className="bg-gradient-to-r from-orange-400 dark:from-emerald-300 to-amber-300 dark:to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text text-shadow dark:text-shadow-none">
                     <span>{project.title}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
@@ -90,7 +91,7 @@ function Projects() {
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="dark:bg-white/90 bg-black/80 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/95 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 hover:ring-white/50 button-animation hover:scale-100">
+                    <button className="dark:bg-white/90 bg-black/85 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/90 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 dark:hover:ring-white/50 hover:ring-black/50 button-animation hover:scale-100">
                       <span>Visit Live Site</span>
                       <ArrowDiagonal className="rotate-45 size-4 dark:fill-black fill-white" />
                     </button>

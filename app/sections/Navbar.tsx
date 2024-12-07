@@ -12,11 +12,11 @@ function Navbar() {
   const baseClass =
     'nav-item cursor-pointer px-4 py-1.5 rounded-full dark:text-white/70 text-dark/70 text-sm font-semibold dark:hover:bg-white/10 hover:bg-black/10 dark:hover:text-white hover:text-black text-black '
   const activeClass =
-    'dark:bg-white bg-black dark:text-gray-900 text-color1 dark:hover:bg-white/70 hover:bg-black/70 dark:hover:text-gray-900 hover:text-color1'
+    'dark:bg-white bg-black/90 dark:text-gray-900 text-brown1 dark:hover:bg-white/70 hover:bg-black/70 dark:hover:text-gray-900 hover:text-brown1'
 
   return (
     <div className="flex justify-center items-center fixed md:top-3 w-full z-10">
-      <nav className="flex gap-1 p-0.5 dark:border-white/15 border-black/20 rounded-full border-2 dark:bg-white/10 bg-black/10 backdrop-blur">
+      <nav className="flex gap-1 p-0.5 dark:border-white/15 border-black/15 rounded-full border-2 dark:bg-white/10 bg-brown3/10 backdrop-blur">
         {[
           { to: 'home', label: 'Home', duration: 500 },
           { to: 'projects', label: 'Projects', duration: 700 },
