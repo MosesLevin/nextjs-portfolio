@@ -1,5 +1,5 @@
-import Stern from '@/assets/Stern.svg'
-import HeroLargeThemeSvg from '@/components/HeroLargeThemeSvg'
+import Stern from '@/src/assets/Stern.svg'
+import HeroLargeThemeSvg from '@/src/components/HeroLargeThemeSvg'
 import { Fragment } from 'react'
 const words = [
   'Performant',

@@ -1,4 +1,4 @@
-import WhiteNoise from '@/assets/WhiteNoise.jpg'
+import WhiteNoise from '@/src/assets/WhiteNoise.jpg'
 import { ComponentPropsWithoutRef, PropsWithChildren } from 'react'
 import { twMerge } from 'tailwind-merge'
 

@@ -1,10 +1,10 @@
-import Client1 from '@/assets/memojis/Client-1-memoji.png'
-import Client3 from '@/assets/memojis/Client-3-memoji.png'
-import Client4 from '@/assets/memojis/Client-4-memoji.png'
-import Client5 from '@/assets/memojis/Client-5-memoji.png'
-import SectionHeader from '@/components/SectionHeader'
+import Client1 from '@/src/assets/memojis/Client-1-memoji.png'
+import Client3 from '@/src/assets/memojis/Client-3-memoji.png'
+import Client4 from '@/src/assets/memojis/Client-4-memoji.png'
+import Client5 from '@/src/assets/memojis/Client-5-memoji.png'
+import SectionHeader from '@/src/components/SectionHeader'
 import Image from 'next/image'
-import Card from '@/components/Card'
+import Card from '@/src/components/Card'
 import { Fragment } from 'react'
 
 // placeholder data for personal customer references

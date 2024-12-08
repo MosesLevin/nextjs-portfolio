@@ -1,8 +1,8 @@
-import Arrow from '@/assets/icons/arrow-diag.svg'
-import LinkedinIcon from '@/assets/icons/linkedin.svg'
-import GithubIcon from '@/assets/icons/github.svg'
-import MailIcon from '@/assets/icons/envelope.svg'
-import StackIcons from '@/components/StackIcons'
+import Arrow from '@/src/assets/icons/arrow-diag.svg'
+import LinkedinIcon from '@/src/assets/icons/linkedin.svg'
+import GithubIcon from '@/src/assets/icons/github.svg'
+import MailIcon from '@/src/assets/icons/envelope.svg'
+import StackIcons from '@/src/components/StackIcons'
 
 type footLinks = { title: string; href: string; icon: React.ElementType }
 const footLinks: footLinks[] = [

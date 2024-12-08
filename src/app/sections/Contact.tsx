@@ -1,7 +1,7 @@
-import Arrow from '@/assets/icons/arrow-diag.svg'
-import whiteNoise from '@/assets/WhiteNoise.jpg'
-import Card from '@/components/Card'
-import ContactForm from '@/components/ContactForm'
+import Arrow from '@/src/assets/icons/arrow-diag.svg'
+import whiteNoise from '@/src/assets/WhiteNoise.jpg'
+import Card from '@/src/components/Card'
+import ContactForm from '@/src/components/ContactForm'
 
 export default function Contact() {
   return (

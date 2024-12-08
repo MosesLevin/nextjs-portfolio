@@ -1,18 +1,18 @@
 'use client'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import Stern from '@/assets/Stern.svg'
-import Sonne from '@/assets/icons/sonneGros.svg'
+import SternWeit from '@/src/assets/SternWeit.svg'
+import SonneWeit from '@/src/assets/icons/sunIcon.svg'
 
-interface HeroLargeThemeSvgProps {
+interface HeroSmallThemeSvgProps {
   lightClassName?: string
   darkClassName?: string
 }
 
-export default function HeroLargeThemeSvg({
+export default function HeroSmallThemeSvg({
   lightClassName,
   darkClassName,
-}: HeroLargeThemeSvgProps) {
+}: HeroSmallThemeSvgProps) {
   //
   // sets mounted to true once useEffect ran. (setTheme reserved keyword next-themes)
   const { theme, resolvedTheme } = useTheme()
@@ -24,8 +24,8 @@ export default function HeroLargeThemeSvg({
   if (!mounted) return null
 
   return resolvedTheme === 'light' ? (
-    <Sonne className={lightClassName} />
+    <SonneWeit className={lightClassName} />
   ) : (
-    <Stern className={darkClassName} />
+    <SternWeit className={darkClassName} />
   )
 }

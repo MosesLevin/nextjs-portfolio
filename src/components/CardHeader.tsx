@@ -1,6 +1,6 @@
-import Stern from '@/assets/Stern.svg'
+import Stern from '@/src/assets/Stern.svg'
 import { twMerge } from 'tailwind-merge'
-import HeroLargeThemeSvg from '@/components/HeroLargeThemeSvg'
+import HeroLargeThemeSvg from '@/src/components/HeroLargeThemeSvg'
 
 export default function CardHeader({
   title,
