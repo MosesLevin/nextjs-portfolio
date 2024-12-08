@@ -3,8 +3,8 @@
 
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
-import SunIcon from '@/assets/SunIcon.svg'
-import MoonIcon from '@/assets/MoonIcon.svg'
+import SunIcon from '@/src/assets/SunIcon.svg'
+import MoonIcon from '@/src/assets/MoonIcon.svg'
 
 export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false)

@@ -1,8 +1,8 @@
 'use client'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import berlinMap2 from '@/assets/berlinMap2.jpg'
-import berlinMap from '@/assets/berlinMap.jpg'
+import berlinMap2 from '@/src/assets/berlinMap2.jpg'
+import berlinMap from '@/src/assets/berlinMap.jpg'
 import Image from 'next/image'
 
 export default function MapThemeToggle() {

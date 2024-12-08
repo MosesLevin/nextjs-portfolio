@@ -1,15 +1,17 @@
-import heroImage from '@/assets/memojis/MoComputerMemoji.png'
+import heroImage from '@/src/assets/memojis/MoComputerMemoji.png'
 import Image from 'next/image'
-import whiteNoise from '@/assets/WhiteNoise.jpg'
-import HeroSolarSystem from '@/components/HeroSolarSystem'
-import HeroButtons from '@/components/HeroButtons'
+import whiteNoise from '@/src/assets/WhiteNoise.jpg'
+import HeroSolarSystem from '@/src/components/HeroSolarSystem'
+import HeroButtons from '@/src/components/HeroButtons'
 // created a few components for svg theme toggle so that not all of hero is client
-import HeroLargeThemeSvg from '@/components/HeroLargeThemeSvg'
-import HeroSmallThemeSvg from '@/components/HeroSmallThemeSvg'
+import HeroLargeThemeSvg from '@/src/components/HeroLargeThemeSvg'
+import HeroSmallThemeSvg from '@/src/components/HeroSmallThemeSvg'
 
-//
+// internationalization
+import { useTranslations } from 'next-intl'
 
 function Hero() {
+  const t = useTranslations('Homepage')
   return (
     <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip ">
       <div
@@ -163,21 +165,22 @@ function Hero() {
             </div>
 
             <div className="text-sm font-medium dark:text-white text-black">
-              Available for new projects
+              {t('availability')}
             </div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide dark:text-white text-black ">
-            Building Websites very good yes
+            {t('title')}
           </h1>
           <p className="mt-4 text-center dark:text-white/60 text-black/60 md:text-lg ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
-            amet enim eget risus efficitur malesuada. Praesent eu nulla
-            venenatis, tincidunt quam nec, convallis mi.
+            {t('description')}
           </p>
         </div>
-        <HeroButtons />
+        <HeroButtons
+          buttonExploreText={t('buttonExplore')}
+          buttonContactText={t('buttonContact')}
+        />
       </div>
     </section>
   )

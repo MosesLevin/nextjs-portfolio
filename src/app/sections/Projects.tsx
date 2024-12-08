@@ -1,10 +1,10 @@
-import project1Placeholder from '@/assets/BuildingProjectsImg.png'
+import project1Placeholder from '@/src/assets/BuildingProjectsImg.png'
 
 import Image from 'next/image'
-import CheckmarkIcon from '@/assets/icons/checkmark.svg'
-import ArrowDiagonal from '@/assets/icons/arrow-diag.svg'
-import SectionHeader from '@/components/SectionHeader'
-import Card from '@/components/Card'
+import CheckmarkIcon from '@/src/assets/icons/checkmark.svg'
+import ArrowDiagonal from '@/src/assets/icons/arrow-diag.svg'
+import SectionHeader from '@/src/components/SectionHeader'
+import Card from '@/src/components/Card'
 
 const portfolioProject = [
   {

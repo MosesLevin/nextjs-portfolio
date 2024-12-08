@@ -1,3 +1,8 @@
+import createNextIntlPlugin from 'next-intl/plugin'
+
+// for internationalization we need to wrap our next config with it at the bottom
+const withNextIntl = createNextIntlPlugin()
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack(config) {
@@ -45,4 +50,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+export default withNextIntl(nextConfig)

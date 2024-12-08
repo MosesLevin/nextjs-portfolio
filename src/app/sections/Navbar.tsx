@@ -2,7 +2,7 @@
 import { Link } from 'react-scroll'
 import { twMerge } from 'tailwind-merge'
 import { useState } from 'react'
-import ThemeSwitch from '@/components/ThemeSwitch'
+import ThemeSwitch from '@/src/components/ThemeSwitch'
 
 // works almost perfectly, i added offset option from react-scroll, need to style contact before continuing debugging contact and offset so it works on all screen sizes
 
