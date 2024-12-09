@@ -1,9 +1,9 @@
 {
-  "welcome": "Willkommen auf unserer Webseite!",
-  "toggle": "Wechseln Sie zu Englisch",
-
   "Homepage": {
-    "title": "Wilkommen HOME",
-    "content": "Heim contentsss"
+    "availability": "Verfugbar fur neue projekte",
+    "title": "Moses Webentwickler",
+    "description": "Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva",
+    "buttonExplore": "Exploriererere My Work",
+    "buttonContact": "Schreiben to me"
   }
 }

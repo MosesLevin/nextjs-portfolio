@@ -1,4 +1,3 @@
-import Arrow from '@/src/assets/icons/arrow-diag.svg'
 import LinkedinIcon from '@/src/assets/icons/linkedin.svg'
 import GithubIcon from '@/src/assets/icons/github.svg'
 import MailIcon from '@/src/assets/icons/envelope.svg'
@@ -56,3 +55,6 @@ export default function Footer() {
     </footer>
   )
 }
+
+// import { useTranslations } from 'next-intl'
+//   const t = useTranslations('Homepage')
