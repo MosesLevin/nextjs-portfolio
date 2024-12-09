@@ -2,8 +2,10 @@ import Arrow from '@/src/assets/icons/arrow-diag.svg'
 import whiteNoise from '@/src/assets/WhiteNoise.jpg'
 import Card from '@/src/components/Card'
 import ContactForm from '@/src/components/ContactForm'
+import { useTranslations } from 'next-intl'
 
 export default function Contact() {
+  const t = useTranslations('Contact')
   return (
     <section id="contact" className="py-16 pt-32 lg:py-24 lg:pt-20">
       <div className="container">
@@ -20,11 +22,10 @@ export default function Contact() {
               <div className="flex flex-col md:flex-row gap-3 md:gap-16 items-center ">
                 <div>
                   <h2 className="font-serif text-2xl md:text-3xl">
-                    Let&apos;s create something amazing together
+                    {t('title')}
                   </h2>
                   <p className="text-sm md:text-base mt-2">
-                    Ready to bring your next project to life? Let&apos;s connect
-                    and discover how I can help you achieve your goals.
+                    {t('description')}
                   </p>
                 </div>
                 <div>
@@ -33,7 +34,7 @@ export default function Contact() {
                       className=" text-white bg-black inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 
                   button-animation ring-2 ring-gray-800 hover:ring-gray-800 hover:ring-4"
                     >
-                      <span className="font-semibold">E-Mail</span>
+                      <span className="font-semibold">{t('emailText')}</span>
                       <Arrow className="rotate-45 fill-white size-4" />
                     </button>
                   </a>

@@ -1,8 +1,10 @@
 'use client'
 import React, { useState } from 'react'
 import { send } from '@emailjs/browser'
+import { useTranslations } from 'next-intl'
 
 const ContactForm: React.FC = () => {
+  const t = useTranslations('Contact.contactForm')
   //  form data which handleChange sets on change (change event) for all form inputs
   const [formData, setFormData] = useState({
     name: '',
@@ -90,14 +92,14 @@ const ContactForm: React.FC = () => {
     <form onSubmit={handleSubmit} className="mx-6">
       <div className="container py-10 md:flex md:flex-col md:items-center md:justify-center ">
         <h2 className="text-2xl font-serif mb-4 dark:text-white/90 text-black/90 text-center">
-          Write a quick message
+          {t('header')}
         </h2>
         <div className="mb-4 md:mb-6">
           <label
             htmlFor="name"
             className="block text-base font-semibold dark:text-white/60 text-black/60"
           >
-            Name
+            {t('name')}
           </label>
           <input
             type="text"
@@ -114,7 +116,7 @@ const ContactForm: React.FC = () => {
             htmlFor="email"
             className="block text-base font-semibold dark:text-white/60 text-black/60"
           >
-            Email
+            {t('email')}
           </label>
           {/* adds a couple of classes and a paragraph if emailError state isnt empty */}
           <input
@@ -139,7 +141,7 @@ const ContactForm: React.FC = () => {
             htmlFor="message"
             className="block text-base font-semibold dark:text-white/60 text-black/60"
           >
-            Message
+            {t('message')}
           </label>
           {/* adds a couple of classes and a paragraph if messageError state isnt empty */}
 
@@ -167,7 +169,7 @@ const ContactForm: React.FC = () => {
           className="w-full md:w-[420px] lg:w-[550px] py-3 px-3 bg-gradient-to-r mt-4 from-amber-300 dark:from-emerald-300 to-orange-500 dark:to-sky-400 text-gray-950 font-semibold
           button-animation focus:ring-1 dark:focus-visible:ring-white focus-visible:ring-black hover:ring-2 dark:hover:ring-sky-200 hover:ring-amber-300 hover:text-black "
         >
-          {isSubmitting ? 'Sending...' : 'Send'}
+          {isSubmitting ? t('sending') : t('send')}
         </button>
         {successMessage && (
           <p className="mt-4 text-center text-emerald-400">{successMessage}</p>

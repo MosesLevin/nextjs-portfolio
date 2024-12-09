@@ -23,6 +23,7 @@ import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import RotatingBookCovers from '@/src/components/RotatingBookCovers'
 import MapThemeToggle from '@/src/components/MapThemeToggle'
+import { useTranslations } from 'next-intl'
 
 type interfaceToolboxItem = { title: string; iconType: React.ElementType } // This ensures `iconType` is "typed" correctly
 // "Stack" or toolbox - all could be pulled from a database if larger projectand not hard coded
@@ -85,68 +86,69 @@ const toolboxItems: interfaceToolboxItem[] = [
   },
 ]
 // hobbies - all could be in database if larger project
-const hobbies = [
-  {
-    title: 'Meditating',
-    emoji: '🧘🏻',
-    left: '1%',
-    top: '0%',
-  },
-
-  {
-    title: 'Playing',
-    emoji: '🎸',
-    left: '-3%',
-    top: '46%',
-  },
-
-  {
-    title: 'Gaming',
-    emoji: '🎮',
-    left: '6%',
-    top: '67%',
-  },
-  {
-    title: 'Reading',
-    emoji: '📚',
-    left: '59%',
-    top: '78%',
-  },
-  {
-    title: 'Running',
-    emoji: '👟',
-    left: '33%',
-    top: '49%',
-  },
-  {
-    title: 'Cooking',
-    emoji: '🌮',
-    left: '12%',
-    top: '25%',
-  },
-  {
-    title: 'Hiking',
-    emoji: '🏔️',
-    left: '48%',
-    top: '7%',
-  },
-  {
-    title: 'Traveling',
-    emoji: '✈️',
-    left: '58%',
-    top: '16%',
-  },
-]
 
 export default function About() {
   const constrainRef = useRef(null)
+  const t = useTranslations('About')
+  const hobbies = [
+    {
+      title: t('hobbies.meditating'),
+      emoji: '🧘🏻',
+      left: '1%',
+      top: '0%',
+    },
+
+    {
+      title: t('hobbies.playing'),
+      emoji: '🎸',
+      left: '-3%',
+      top: '46%',
+    },
+
+    {
+      title: t('hobbies.gaming'),
+      emoji: '🎮',
+      left: '6%',
+      top: '67%',
+    },
+    {
+      title: t('hobbies.reading'),
+      emoji: '📚',
+      left: '59%',
+      top: '78%',
+    },
+    {
+      title: t('hobbies.running'),
+      emoji: '👟',
+      left: '33%',
+      top: '49%',
+    },
+    {
+      title: t('hobbies.cooking'),
+      emoji: '🌮',
+      left: '12%',
+      top: '25%',
+    },
+    {
+      title: t('hobbies.hiking'),
+      emoji: '🏔️',
+      left: '48%',
+      top: '7%',
+    },
+    {
+      title: t('hobbies.traveling'),
+      emoji: '✈️',
+      left: '58%',
+      top: '16%',
+    },
+  ]
   return (
     <section id="about" className="pt-20 lg:py-28 ">
       <div className="container">
         <SectionHeader
-          eyebrow="About Me"
-          title="A Glimpse Into My World"
-          description="Learn more about what I like doing, and what drives me."
+          eyebrow={t('sectionHeader.header')}
+          title={t('sectionHeader.title')}
+          description={t('sectionHeader.description')}
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
@@ -155,13 +157,11 @@ export default function About() {
             {/* Section TOOLBOX*/}
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="My Toolbox"
-                description="The technologies and tools I use to bring Websites & Apps to life"
-                className=""
+                title={t('toolboxCard.title')}
+                description={t('toolboxCard.description')}
               />
               <Toolbox
                 items={toolboxItems}
-                className=""
                 itemsWrapperClassName="animate-left-movement [animation-duration:25s] hover:[animation-play-state:paused]"
               />
               <Toolbox
@@ -176,8 +176,8 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:grid-cols-3">
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="Aside from coding"
-                description="My interests and hobbies other than Tech"
+                title={t('hobbies.hobbiesCard.title')}
+                description={t('hobbies.hobbiesCard.description')}
                 className="px-6 py-6"
               />
               {/* giving a ref to the parent div and telling framer-motion "drag" that that ref is the constraint */}

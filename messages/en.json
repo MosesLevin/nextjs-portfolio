@@ -33,5 +33,76 @@
     "word9": "Search Optimized",
     "word10": "Usable",
     "word11": "Reliable"
+  },
+  "References": {
+    "sectionHeader": {
+      "header": "Happy Clients",
+      "title": "What's Said about Me",
+      "description": "Don't just take my word for it. See what people that worked with me have to say."
+    },
+    "neueTraditionen": {
+      "position": "CEO, NeueTraditionen",
+      "recommendation": "\"Ich bin von seinen Fähigkeiten, Engagement und Leidenschaft für Teamarbeit tiefstens überzeugt ...Moses war ein zentrales Mitglied eines Teams aus drei Entwicklern, das ein intuitiven 'MVP' für unser Unternehmen entwickelt hat.\""
+    },
+    "organicsBest": {
+      "position": "Founder, Organic's Best Shop",
+      "recommendation": "\"...durch ein hohes Maß an Eigeninitiative und Identifikation aus, wodurch Herr Levin regelmäßig eigene konkrete Vorschläge unterbreitete, die dazu beitrugen mögliche Verbesserungspotenziale vollumfänglich auszuschöpfen.\""
+    },
+    "pinkHouseHostel": {
+      "position": "Manager, PinkHouseHostel",
+      "recommendation": "\"Moses Levin beeindruckte uns mit seiner Kreativität und Verständnis moderner Webtechnologien. Seine Arbeit hat die Benutzerfreundlichkeit unserer Plattform signifikant gesteigert und zu positiven...\""
+    },
+    "healingArts": {
+      "position": "CEO, HealingArts",
+      "recommendation": "\"Die Zusammenarbeit mit Moses war eine Freude. Er könnte mir die technischen Anforderungen des Projekts erklären, besonderes war mir wertvoll seine tiefgehende verstandnis meiner Vorstellung...\""
+    }
+  },
+  "About": {
+    "sectionHeader": {
+      "header": "About Me",
+      "title": "A Glimpse Into My World",
+      "description": "Learn more about what I like doing, and what drives me."
+    },
+    "books": {
+      "booksHeader": {
+        "title": "What I Read",
+        "description": "Explore books that shaped my perspectives"
+      }
+    },
+    "hobbies": {
+      "hobbiesCard": {
+        "title": "Aside from coding",
+        "description": "My interests and hobbies other than Tech"
+      },
+
+      "meditating": "Meditating",
+      "playing": "Playing",
+      "gaming": "Gaming",
+      "reading": "Reading",
+      "running": "Running",
+      "cooking": "Cooking",
+      "hiking": "Hiking",
+      "traveling": "Traveling"
+    },
+    "toolboxCard": {
+      "title": "My Toolbox",
+      "description": "The technologies and tools I use to bring Websites & Apps to life"
+    }
+  },
+  "Contact": {
+    "title": "Let's create something amazing together",
+    "description": "Ready to bring your next project to life? Let's connect and discover how I can help you achieve your goals.",
+    "emailText": "E-Mail",
+    "contactForm": {
+      "header": "Write a quick message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending..."
+    }
+  },
+  "Footer": {
+    "rights": "2024. All rights reserved."
   }
 }

@@ -13,6 +13,7 @@ import PragmaticProgrammerBookCover from '@/src/assets/books/Book1-PragmaticProg
 import LifeOfPiBookCover from '@/src/assets/books/Book8-LifeOfPi.jpg'
 import { Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { useTranslations } from 'next-intl'
 import 'swiper/css'
 
 // this was good ol friend, he said its more lightweight and ssr friendly than using "swiper" but im trying swiper since it works so far.
@@ -29,11 +30,12 @@ const bookCovers = [
 ]
 
 const RotatingBookCovers = () => {
+  const t = useTranslations('About')
   return (
     <Card className="h-[320px] md:col-span-2 lg:col-span-1">
       <CardHeader
-        title="What I Read"
-        description="Explore books that shaped my perspectives"
+        title={t('books.booksHeader.title')}
+        description={t('books.booksHeader.description')}
         className2="md:whitespace-nowrap"
       />
       <Swiper
