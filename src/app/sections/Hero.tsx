@@ -177,10 +177,7 @@ function Hero() {
             {t('description')}
           </p>
         </div>
-        <HeroButtons
-          buttonExploreText={t('buttonExplore')}
-          buttonContactText={t('buttonContact')}
-        />
+        <HeroButtons />
       </div>
     </section>
   )

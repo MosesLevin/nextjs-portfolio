@@ -46,8 +46,8 @@ export default async function RootLayout({
           'dark:bg-gray-900 bg-brown1 text-white antialiased font-sans'
         )}
       >
-        {/* wrap our internationalization provider with another theme provider - if any more providers need to make a provider component */}
-        <NextIntlClientProvider>
+        {/* wrap our internationalization provider with another theme provider - if any more providers need to make a provider component take props for useTranslation hook to work in client components to avoid translation prop drilling in many components */}
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>{children}</Providers>
         </NextIntlClientProvider>
       </body>

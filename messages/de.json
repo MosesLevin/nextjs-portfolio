@@ -1,8 +1,14 @@
 {
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projekte",
+    "about": "Uber mich",
+    "contact": "Kontakt"
+  },
   "Homepage": {
     "availability": "Verfugbar fur neue projekte",
     "title": "Moses Webentwickler",
-    "description": "Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva",
+    "description": "yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen",
     "buttonExplore": "Exploriererere My Work",
     "buttonContact": "Schreiben to me"
   }
