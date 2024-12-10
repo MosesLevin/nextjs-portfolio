@@ -2,14 +2,107 @@
   "Navbar": {
     "home": "Home",
     "projects": "Projekte",
-    "about": "Uber mich",
+    "about": "Über mich",
     "contact": "Kontakt"
   },
   "Homepage": {
-    "availability": "Verfugbar fur neue projekte",
+    "availability": "Verfügbar fur neue Projekte",
     "title": "Moses Webentwickler",
     "description": "yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen",
-    "buttonExplore": "Exploriererere My Work",
-    "buttonContact": "Schreiben to me"
+    "buttonExplore": "Zu meinen Projekten",
+    "buttonContact": "Schreib mir"
+  },
+  "Projects": {
+    "header": "Erfolgreiche Umsetzungen",
+    "title": "Ausgewählte Projekte",
+    "description": "Ich verwandle Konzepte in innovative digitale Erlebnisse",
+    "cardSellPoint1": "Enhanced UX",
+    "cardSellPoint2": "Improved loading speed",
+    "cardSellPoint3": "Increased mobile traffic",
+    "buttonVisit": "Webseite besuchen"
+  },
+  "Banner": {
+    "word1": "Leistungsstark",
+    "word2": "Zugänglich",
+    "word3": "Sicher",
+    "word4": "Interaktiv",
+    "word5": "Suchmaschinenoptimiert",
+    "word6": "Skalierbar",
+    "word7": "Responsiv",
+    "word8": "Zukunftssicher",
+    "word9": "Benutzerfreundlich",
+    "word10": "Modern",
+    "word11": "Zuverlässig"
+  },
+  "References": {
+    "sectionHeader": {
+      "header": "Zufriedene Kunden",
+      "title": "Das sagt man über mich",
+      "description": "Überzeugen Sie sich selbst. Lesen Sie, was Kollegen und Kunden über mich schreiben"
+    },
+    "neueTraditionen": {
+      "position": "CEO, NeueTraditionen",
+      "recommendation": "\"Ich bin von seinen Fähigkeiten, Engagement und Leidenschaft für Teamarbeit tiefstens überzeugt ...Moses war ein zentrales Mitglied eines Teams aus drei Entwicklern, das ein intuitiven 'MVP' für unser Unternehmen entwickelt hat.\""
+    },
+    "organicsBest": {
+      "position": "Gründer, Organic's Best Shop",
+      "recommendation": "\"...durch ein hohes Maß an Eigeninitiative und Identifikation aus, wodurch Herr Levin regelmäßig eigene konkrete Vorschläge unterbreitete, die dazu beitrugen mögliche Verbesserungspotenziale vollumfänglich auszuschöpfen.\""
+    },
+    "pinkHouseHostel": {
+      "position": "Geschäftsführer, PinkHouseHostel",
+      "recommendation": "\"Moses Levin beeindruckte uns mit seiner Kreativität und Verständnis moderner Webtechnologien. Seine Arbeit hat die Benutzerfreundlichkeit unserer Plattform signifikant gesteigert und zu positiven...\""
+    },
+    "healingArts": {
+      "position": "CEO, HealingArts",
+      "recommendation": "\"Die Zusammenarbeit mit Moses war eine Freude. Er könnte mir die technischen Anforderungen des Projekts erklären, besonderes war mir wertvoll seine tiefgehende verstandnis meiner Vorstellung...\""
+    }
+  },
+  "About": {
+    "sectionHeader": {
+      "header": "Über mich",
+      "title": "Ein Einblick in meine Welt",
+      "description": "Learn more about what I like doing, and what drives me."
+    },
+    "books": {
+      "booksHeader": {
+        "title": "What I Read",
+        "description": "Explore books that shaped my perspectives"
+      }
+    },
+    "hobbies": {
+      "hobbiesCard": {
+        "title": "Aside from coding",
+        "description": "My interests and hobbies other than Tech"
+      },
+
+      "meditating": "Meditating",
+      "playing": "Playing",
+      "gaming": "Gaming",
+      "reading": "Reading",
+      "running": "Running",
+      "cooking": "Cooking",
+      "hiking": "Hiking",
+      "traveling": "Traveling"
+    },
+    "toolboxCard": {
+      "title": "My Toolbox",
+      "description": "The technologies and tools I use to bring Websites & Apps to life"
+    }
+  },
+  "Contact": {
+    "title": "Let's create something amazing together",
+    "description": "Ready to bring your next project to life? Let's connect and discover how I can help you achieve your goals.",
+    "emailText": "E-Mail",
+    "contactForm": {
+      "header": "Write a quick message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending..."
+    }
+  },
+  "Footer": {
+    "rights": "2024. All rights reserved."
   }
 }
