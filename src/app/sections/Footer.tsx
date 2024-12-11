@@ -33,8 +33,9 @@ export default function Footer() {
       ></div>
       <div className="container ">
         <div className="border-t dark:border-white/15 border-black/15 py-6 text-sm flex flex-col-reverse md:flex-row md:justify-between items-center gap-8">
-          <div className="dark:text-white/40 text-black/40">
-            &copy; {t('rights')}
+          <div className="flex dark:text-white/40 text-black/40 gap-4">
+            <div> &copy; {t('rights')}</div>
+            <div>{t('location')}</div>
           </div>
           <nav className="flex flex-col md:flex-row items-center gap-8">
             {footLinks.map((link) => (

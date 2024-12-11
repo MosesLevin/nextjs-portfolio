@@ -41,8 +41,8 @@ function Navbar() {
         ))}
       </nav>
       <div className="flex flex-none absolute inset-0 justify-end top-16 right-6">
-        <ThemeSwitch />
         <LanguageToggle />
+        <ThemeSwitch />
       </div>
     </div>
   )

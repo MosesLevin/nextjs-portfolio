@@ -52,6 +52,7 @@ function Projects() {
           eyebrow={t('header')}
           title={t('title')}
           description={t('description')}
+          //DE "description": "Schauen Sie Konzepte die ich in innovative digitale Erlebnisse umgesetzt habe",
         />
 
         {/* CARDS FOR PROJECTS */}

@@ -8,14 +8,14 @@
   "Homepage": {
     "availability": "Available for new projects",
     "title": "Moses Web Developer",
-    "description": "Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva Upsi Lori atis, tincidunt quam nec, conva",
+    "description": "Based in Berlin, I'm a Web Developer specializing in transforming designs into modern, high quality web applications for clients Worldwide",
     "buttonExplore": "Explore My Work",
     "buttonContact": "Write to me"
   },
   "Projects": {
     "header": "Real-world Results",
     "title": "Featured Projects",
-    "description": "I transform ideas into interactive digital solutions.",
+    "description": "I bring thoughts to life through interactive digital solutions",
     "cardSellPoint1": "Enhanced UX",
     "cardSellPoint2": "Improved loading speed",
     "cardSellPoint3": "Increased mobile traffic",
@@ -90,11 +90,11 @@
     }
   },
   "Contact": {
-    "title": "Let's create something amazing together",
+    "title": "Transform your ideas into Reality",
     "description": "Ready to bring your next project to life? Let's connect and discover how I can help you achieve your goals.",
     "emailText": "E-Mail",
     "contactForm": {
-      "header": "Write a quick message",
+      "header": "Feel free to reach out",
       "name": "Name",
       "email": "Email",
       "message": "Message",
@@ -103,6 +103,7 @@
     }
   },
   "Footer": {
-    "rights": "2024. All rights reserved."
+    "rights": "2024. All rights reserved.",
+    "location": "Worldwide"
   }
 }

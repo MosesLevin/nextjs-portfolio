@@ -8,14 +8,14 @@
   "Homepage": {
     "availability": "Verfügbar fur neue Projekte",
     "title": "Moses Webentwickler",
-    "description": "yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen yksi kaksi kolunen",
+    "description": "Ich verwandle designs in moderne, maßgeschnittenen Web Apps für Kunden in Berlin und Weltweit. Lassen Sie uns über Ihr nächstes Projekt sprechen",
     "buttonExplore": "Zu meinen Projekten",
     "buttonContact": "Schreib mir"
   },
   "Projects": {
     "header": "Erfolgreiche Umsetzungen",
     "title": "Ausgewählte Projekte",
-    "description": "Ich verwandle Konzepte in innovative digitale Erlebnisse",
+    "description": "Ich erwecke Ihre Gedanken zum Leben mithilfe interaktiven digitale Lösungen",
     "cardSellPoint1": "Enhanced UX",
     "cardSellPoint2": "Improved loading speed",
     "cardSellPoint3": "Increased mobile traffic",
@@ -61,48 +61,49 @@
     "sectionHeader": {
       "header": "Über mich",
       "title": "Ein Einblick in meine Welt",
-      "description": "Learn more about what I like doing, and what drives me."
+      "description": "Lernen Sie meine Leidenschaften und Antriebe kennen"
     },
     "books": {
       "booksHeader": {
-        "title": "What I Read",
-        "description": "Explore books that shaped my perspectives"
+        "title": "Meine Bücher",
+        "description": "Erkunden Sie Bücher die mich geprägt haben"
       }
     },
     "hobbies": {
       "hobbiesCard": {
-        "title": "Aside from coding",
-        "description": "My interests and hobbies other than Tech"
+        "title": "Neben dem coding",
+        "description": "Was mich neben der Technik begeistert"
       },
 
-      "meditating": "Meditating",
-      "playing": "Playing",
-      "gaming": "Gaming",
-      "reading": "Reading",
-      "running": "Running",
-      "cooking": "Cooking",
-      "hiking": "Hiking",
-      "traveling": "Traveling"
+      "meditating": "Meditieren",
+      "playing": "Musik Spielen",
+      "gaming": "Spielen",
+      "reading": "Lesen",
+      "running": "Joggen",
+      "cooking": "Kochen",
+      "hiking": "Wandern",
+      "traveling": "Reisen"
     },
     "toolboxCard": {
-      "title": "My Toolbox",
-      "description": "The technologies and tools I use to bring Websites & Apps to life"
+      "title": "Werkzeugskasten",
+      "description": "Die technologien und Werkzeuge die ich benutze um Webseiten & Apps zu bauen"
     }
   },
   "Contact": {
-    "title": "Let's create something amazing together",
-    "description": "Ready to bring your next project to life? Let's connect and discover how I can help you achieve your goals.",
+    "title": "Verwandeln Sie Ihre Ideen in Realität",
+    "description": "Bereit, Ihr nächstes Projekt zu realisieren? Kontaktieren Sie mich und wir werden gemeinsam sehen, wie ich Ihnen helfen kann, Ihre Ziele zu verwirklichen.",
     "emailText": "E-Mail",
     "contactForm": {
-      "header": "Write a quick message",
+      "header": "Schreib mir einfach",
       "name": "Name",
       "email": "Email",
-      "message": "Message",
-      "send": "Send",
-      "sending": "Sending..."
+      "message": "Nachricht",
+      "send": "Senden",
+      "sending": "Sendet..."
     }
   },
   "Footer": {
-    "rights": "2024. All rights reserved."
+    "rights": "2024. All rights reserved.",
+    "location": "Berlin, Germany"
   }
 }
