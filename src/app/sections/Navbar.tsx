@@ -6,6 +6,7 @@ import ThemeSwitch from '@/src/components/ThemeSwitch'
 import LanguageToggle from '@/src/components/LanguageToggle'
 import { useTranslations } from 'next-intl'
 import ToggleSwitch from '@/src/components/ToggleSwitch'
+import AccessibilityNav from '@/src/components/AccessibilityNav'
 
 // works almost perfectly, i added offset option from react-scroll, need to style contact before continuing debugging contact and offset so it works on all screen sizes
 
@@ -42,8 +43,8 @@ function Navbar() {
         ))}
       </nav>
       <div className="flex flex-none absolute inset-0 justify-end top-16 right-6">
-        <LanguageToggle />
-        <ThemeSwitch />
+        <AccessibilityNav />
+
         {/* <ToggleSwitch /> */}
       </div>
     </div>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 
+// made this originally to make language toggle like this too, but it doesnt work because of too async probably? or architecture?
+
 type ToggleSwitchProps = {
   isSelected?: boolean
   onToggle?: () => void

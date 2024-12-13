@@ -1,3 +1,92 @@
+// 'use client'
+
+// import React, { useEffect, useState, useRef } from 'react'
+// import { useRouter, usePathname } from '../i18n/routing' // Use custom routing
+
+// const LanguageToggle: React.FC = () => {
+//   const router = useRouter()
+//   const currentPathname = usePathname()
+//   const [currentLanguage, setCurrentLanguage] = useState<'en' | 'de'>('en')
+//   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+//   const dropdownRef = useRef<HTMLDivElement>(null) // Ref for dropdown
+
+//   useEffect(() => {
+//     // Set initial language from pathname
+//     if (currentPathname.startsWith('/de')) {
+//       setCurrentLanguage('de')
+//     } else {
+//       setCurrentLanguage('en')
+//     }
+//   }, [currentPathname])
+
+//   useEffect(() => {
+//     const handleClickOutside = (event: MouseEvent) => {
+//       if (
+//         dropdownRef.current &&
+//         !dropdownRef.current.contains(event.target as Node)
+//       ) {
+//         setIsDropdownOpen(false)
+//       }
+//     }
+//     document.addEventListener('mousedown', handleClickOutside)
+//     return () => {
+//       document.removeEventListener('mousedown', handleClickOutside)
+//     }
+//   }, [])
+
+//   const toggleLanguage = async (locale: 'en' | 'de') => {
+//     if (locale === currentLanguage) return // Prevent toggling to the same language
+//     const newPathname = currentPathname.replace(/^\/(en|de)/, `/${locale}`)
+
+//     await router.push(
+//       { pathname: newPathname, query: {} },
+//       { locale, scroll: false }
+//     )
+//     setCurrentLanguage(locale) // Update state after successful navigation
+//     setIsDropdownOpen(false) // Close dropdown
+//   }
+
+//   const dropdownOptions = [
+//     { locale: 'en', label: 'EN' },
+//     { locale: 'de', label: 'DE' },
+//   ]
+
+//   return (
+//     <div className="relative inline-block" ref={dropdownRef}>
+//       {/* Current language button */}
+//       <button
+//         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+//         className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-300"
+//         aria-label="Toggle language dropdown"
+//       >
+//         {currentLanguage.toUpperCase()}
+//       </button>
+
+//       {/* Dropdown menu */}
+//       {isDropdownOpen && (
+//         <div className="absolute mt-2 w-24 bg-gray-700 border border-gray-300 rounded-lg shadow-lg z-10">
+//           <ul className="py-1">
+//             {dropdownOptions
+//               .filter((option) => option.locale !== currentLanguage) // Only show other language
+//               .map((option) => (
+//                 <li key={option.locale}>
+//                   <button
+//                     onClick={() => toggleLanguage(option.locale as 'en' | 'de')}
+//                     className="w-full px-4 py-2 text-left hover:bg-gray-600"
+//                   >
+//                     {option.label}
+//                   </button>
+//                 </li>
+//               ))}
+//           </ul>
+//         </div>
+//       )}
+//     </div>
+//   )
+// }
+
+// export default LanguageToggle
+
 // import { useState, useRef, useEffect } from 'react'
 // import { useRouter, usePathname } from '@/src/i18n/routing' // Import custom routing logic
 
@@ -32,7 +121,6 @@
 //     // Update the selected language and close the dropdown
 //     setSelectedLanguage(lang)
 //     setIsOpen(false)
-
 //     // Replace the existing locale in the current pathname
 //     const newPathname = currentPathname.replace(/^\/(en|de)/, `/${lang}`)
 
@@ -44,8 +132,6 @@
 //         scroll: false,
 //       }
 //     )
-
-//     console.log(`Switching to language: ${lang}`)
 //   }
 
 //   // Find the name of the selected language
@@ -82,79 +168,6 @@
 // }
 
 // export default Dropdown
-
-// 'use client'
-
-// import React, { useEffect, useState } from 'react'
-// import { useRouter, usePathname } from '@/src/i18n/routing' // Use custom routing
-
-// const LanguageToggle: React.FC = () => {
-//   const router = useRouter()
-//   const currentPathname = usePathname()
-//   const [currentLanguage, setCurrentLanguage] = useState<'en' | 'de'>('en')
-//   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-
-//   useEffect(() => {
-//     // Set initial language from pathname
-//     if (currentPathname.startsWith('/de')) {
-//       setCurrentLanguage('de')
-//     } else {
-//       setCurrentLanguage('en')
-//     }
-//   }, [currentPathname])
-
-//   const toggleLanguage = async (locale: 'en' | 'de') => {
-//     if (locale === currentLanguage) return // Prevent toggling to the same language
-//     const newPathname = currentPathname.replace(/^\/(en|de)/, `/${locale}`)
-
-//     await router.push(
-//       { pathname: newPathname, query: {} },
-//       { locale, scroll: false }
-//     )
-//     setCurrentLanguage(locale) // Update state after successful navigation
-//     setIsDropdownOpen(false) // Close dropdown
-//   }
-
-//   const dropdownOptions = [
-//     { locale: 'en', label: 'EN' },
-//     { locale: 'de', label: 'DE' },
-//   ]
-
-//   return (
-//     <div className="relative inline-block">
-//       {/* Current language button */}
-//       <button
-//         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-//         className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-300"
-//         aria-label="Toggle language dropdown"
-//       >
-//         {currentLanguage.toUpperCase()}
-//       </button>
-
-//       {/* Dropdown menu */}
-//       {isDropdownOpen && (
-//         <div className="absolute top-full mt-2 w-24 bg-gray-700 border border-gray-300 rounded-lg shadow-lg z-10">
-//           <ul className="py-1">
-//             {dropdownOptions
-//               .filter((option) => option.locale !== currentLanguage) // Only show other language
-//               .map((option) => (
-//                 <li key={option.locale}>
-//                   <button
-//                     onClick={() => toggleLanguage(option.locale as 'en' | 'de')}
-//                     className="w-full px-4 py-2 text-left hover:bg-gray-600"
-//                   >
-//                     {option.label}
-//                   </button>
-//                 </li>
-//               ))}
-//           </ul>
-//         </div>
-//       )}
-//     </div>
-//   )
-// }
-
-// export default LanguageToggle
 
 // 'use client'
 
@@ -198,8 +211,6 @@
 
 // export default LanguageToggle
 
-//
-
 'use client'
 
 import { useRouter, usePathname } from '@/src/i18n/routing' // Use custom routing
@@ -225,7 +236,7 @@ const LanguageToggle = () => {
   return (
     <div>
       <button
-        className="border-2 border-white/70 bg-white/5 p-1 rounded-full hover:bg-white/30 text-orange-400 hover:text-amber-300 transition duration-300"
+        className="font-serif hover:underline p-2 rounded-full text-orange-400 hover:text-amber-300 transition duration-300"
         onClick={() => toggleLanguage('en')}
       >
         EN
