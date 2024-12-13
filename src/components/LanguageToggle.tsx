@@ -234,15 +234,15 @@ const LanguageToggle = () => {
   }
 
   return (
-    <div>
+    <div className="flex gap-4 mb-2">
       <button
-        className="font-serif hover:underline p-2 rounded-full text-orange-400 hover:text-amber-300 transition duration-300"
+        className="font-serif underline underline-offset-4 decoration-black p-2 rounded-full text-gray-700 hover:text-gray-500 transition"
         onClick={() => toggleLanguage('en')}
       >
         EN
       </button>
       <button
-        className="font-serif hover:underline p-2 rounded-full text-orange-400 hover:text-amber-300 transition duration-300"
+        className="font-serif underline underline-offset-4 decoration-black p-2 rounded-full text-gray-700 hover:text-gray-500 transition"
         onClick={() => toggleLanguage('de')}
       >
         DE

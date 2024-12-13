@@ -15,8 +15,8 @@ type ToggleSwitchProps = {
 export default function ToggleSwitch({
   isSelected: controlledSelected,
   onToggle,
-  activeBgClass = 'bg-green-600',
-  inactiveBgClass = 'bg-gray-600',
+  activeBgClass,
+  inactiveBgClass,
   activeIcon,
   inactiveIcon,
 }: ToggleSwitchProps) {
@@ -35,13 +35,13 @@ export default function ToggleSwitch({
     <div
       onClick={handleClick}
       className={twMerge(
-        'flex w-20 h-10 rounded-full items-center transition-all duration-300',
+        'flex w-20 h-10 rounded-full items-center transition-all duration-300 ',
         isSelected ? activeBgClass : inactiveBgClass
       )}
     >
       <span
         className={twMerge(
-          'h-11 w-11 bg-white rounded-full transition-all duration-300 shadow-lg flex items-center justify-center',
+          'h-11 w-11 bg-white ring-2 ring-brown5  dark:ring-black/40 rounded-full transition-all duration-300 shadow-lg flex items-center justify-center',
           isSelected && 'ml-10'
         )}
       >
