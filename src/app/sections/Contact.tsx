@@ -50,17 +50,3 @@ export default function Contact() {
     </section>
   )
 }
-
-// {/* <a
-// href={link.href}
-// key={link.title}
-// target="_blank"
-// className="inline-flex items-center gap-2 hover:underline underline-offset-4"
-// >
-// {/* added declaration for SVGR in typescript in root so we can use link.icon */}
-// <span className="font-semibold">{link.title}</span>
-// <StackIcons
-//   component={link.icon}
-//   size="size-5 button-animation "
-// />
-// </a> */}

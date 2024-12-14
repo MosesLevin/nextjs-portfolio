@@ -8,7 +8,7 @@ import Card from '@/src/components/Card'
 import { Fragment } from 'react'
 import { useTranslations } from 'next-intl'
 
-// placeholder data for personal customer references
+// my customer references/recommendations
 
 export default function References() {
   const t = useTranslations('References')

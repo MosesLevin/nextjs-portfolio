@@ -1,4 +1,3 @@
-import Stern from '@/src/assets/Stern.svg'
 import HeroLargeThemeSvg from '@/src/components/HeroLargeThemeSvg'
 import { Fragment } from 'react'
 import { useTranslations } from 'next-intl'

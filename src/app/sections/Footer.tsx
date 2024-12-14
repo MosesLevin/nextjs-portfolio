@@ -58,6 +58,3 @@ export default function Footer() {
     </footer>
   )
 }
-
-// import { useTranslations } from 'next-intl'
-//   const t = useTranslations('Homepage')

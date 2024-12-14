@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import AccessibilityNav from '@/src/components/AccessibilityNav'
 
-// works almost perfectly, i added offset option from react-scroll, need to style contact before continuing debugging contact and offset so it works on all screen sizes
+// works. i added offset option from react-scroll, need to style contact before continuing debugging contact and offset so it works on all screen sizes
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState('')
