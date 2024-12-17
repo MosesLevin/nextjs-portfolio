@@ -54,7 +54,7 @@ export const metadata: WebsiteMetadata = {
     description: 'A showcase of my web development projects and expertise',
     images: [
       {
-        url: 'hhttps://www.moseslevin.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMoses%20Portfolio%20website.194b3bfe.png&w=3840&q=75',
+        url: 'https://www.moseslevin.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMoses%20Portfolio%20website.194b3bfe.png&w=3840&q=75',
         width: 800,
         height: 600,
         alt: 'Website hompage',
