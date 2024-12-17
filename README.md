@@ -5,7 +5,7 @@
 Fontawesome free svgs
 Streamline free Icon
 SVGRepo free svgs
-Noun Project: arista septiana dewi, fauzin photo
+VERA from Noun Project
 
 inspired by Frontend Tribe
 added features such effects and form accessibility

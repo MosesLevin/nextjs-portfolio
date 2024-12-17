@@ -1,4 +1,5 @@
 import project1Placeholder from '@/src/assets/BuildingProjectsImg.png'
+import projectImagePortfolio from '@/src/assets/Moses Portfolio website.png'
 import Image from 'next/image'
 import CheckmarkIcon from '@/src/assets/icons/checkmark.svg'
 import ArrowDiagonal from '@/src/assets/icons/arrow-diag.svg'
@@ -22,15 +23,15 @@ function Projects() {
       image: project1Placeholder,
     },
     {
-      year: '2020',
-      title: 'Gin Distillery',
+      year: '2024',
+      title: 'Moses Levin',
       result: [
         { title: t('cardSellPoint1') },
         { title: t('cardSellPoint2') },
         { title: t('cardSellPoint3') },
       ],
       link: 'www.google.com',
-      image: project1Placeholder,
+      image: projectImagePortfolio,
     },
     {
       year: '2020',
