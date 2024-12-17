@@ -1,8 +1,11 @@
 ## Using:
 
+### icons:
+
 Fontawesome free svgs
 Streamline free Icon
 SVGRepo free svgs
+Noun Project: arista septiana dewi, fauzin photo
 
 inspired by Frontend Tribe
 added features such effects and form accessibility
