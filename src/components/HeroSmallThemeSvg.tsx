@@ -1,7 +1,7 @@
 'use client'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import SternWeit from '@/src/assets/SternWeit.svg'
+import SternWeit from '@/src/assets/icons/SternWeit.svg'
 import SonneWeit from '@/src/assets/icons/sunIcon.svg'
 
 interface HeroSmallThemeSvgProps {

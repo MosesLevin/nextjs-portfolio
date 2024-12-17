@@ -1,8 +1,8 @@
-import Arrow from '@/src/assets/icons/arrow-diag.svg'
 import LinkedinIcon from '@/src/assets/icons/linkedin.svg'
 import GithubIcon from '@/src/assets/icons/github.svg'
 import MailIcon from '@/src/assets/icons/envelope.svg'
 import StackIcons from '@/src/components/StackIcons'
+import { useTranslations } from 'next-intl'
 
 type footLinks = { title: string; href: string; icon: React.ElementType }
 const footLinks: footLinks[] = [
@@ -24,6 +24,7 @@ const footLinks: footLinks[] = [
 ]
 
 export default function Footer() {
+  const t = useTranslations('Footer')
   return (
     <footer className="relative -z-1 overflow-x-clip">
       <div
@@ -32,8 +33,9 @@ export default function Footer() {
       ></div>
       <div className="container ">
         <div className="border-t dark:border-white/15 border-black/15 py-6 text-sm flex flex-col-reverse md:flex-row md:justify-between items-center gap-8">
-          <div className="dark:text-white/40 text-black/40">
-            &copy; 2024. All rights reserved.
+          <div className="flex dark:text-white/40 text-black/40 gap-4">
+            <div> &copy; {t('rights')}</div>
+            <div>{t('location')}</div>
           </div>
           <nav className="flex flex-col md:flex-row items-center gap-8">
             {footLinks.map((link) => (

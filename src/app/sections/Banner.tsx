@@ -1,21 +1,23 @@
-import Stern from '@/src/assets/Stern.svg'
 import HeroLargeThemeSvg from '@/src/components/HeroLargeThemeSvg'
 import { Fragment } from 'react'
-const words = [
-  'Performant',
-  'Accessible',
-  'Secure',
-  'Interactive',
-  'Scalable',
-  'User Friendly',
-  'Responsive',
-  'Maintainable',
-  'Search Optimized',
-  'Usable',
-  'Reliable',
-]
+import { useTranslations } from 'next-intl'
 
 function Banner() {
+  const t = useTranslations('Banner')
+  const words = [
+    t('word1'),
+    t('word2'),
+    t('word3'),
+    t('word4'),
+    t('word5'),
+    t('word6'),
+    t('word7'),
+    t('word8'),
+    t('word9'),
+    t('word10'),
+    t('word11'),
+  ]
+
   return (
     <div className="py-16 lg:py-24 overflow-x-clip ">
       <div className="bg-gradient-to-r from-amber-300 dark:from-emerald-300 to-orange-500 dark:to-sky-400 -rotate-3 -mx-2">

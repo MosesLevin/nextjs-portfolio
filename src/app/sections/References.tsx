@@ -6,44 +6,46 @@ import SectionHeader from '@/src/components/SectionHeader'
 import Image from 'next/image'
 import Card from '@/src/components/Card'
 import { Fragment } from 'react'
+import { useTranslations } from 'next-intl'
 
-// placeholder data for personal customer references
-const reference = [
-  {
-    name: 'E. Becker',
-    position: 'CEO, NeueTraditionen',
-    text: '"Ich bin von seinen Fähigkeiten, Engagement und Leidenschaft für Teamarbeit tiefstens überzeugt ...Moses war ein zentrales Mitglied eines Teams aus drei Entwicklern, das ein intuitiven "MVP" für unser Unternehmen entwickelt hat."',
-    avatar: Client3,
-  },
-  {
-    name: 'M. Krause',
-    position: "Founder, Organic's Best Shop",
-    text: '"...durch ein hohes Maß an Eigeninitiative und Identifikation aus, wodurch Herr Levin regelmäßig eigene konkrete Vorschläge unterbreitete, die dazu beitrugen mögliche Verbesserungspotenziale vollumfänglich auszuschöpfen."',
-    avatar: Client4,
-  },
-  {
-    name: 'J. Wiśniewski',
-    position: 'Manager, PinkHouseHostel',
-    text: '"Moses Levin beeindruckte uns mit seiner Kreativität und Verständnis moderner Webtechnologien. Seine Arbeit hat die Benutzerfreundlichkeit unserer Plattform signifikant gesteigert und zu positiven..."',
-    avatar: Client1,
-  },
-  {
-    name: 'F. Hankammer',
-    position: 'CEO, HealingArts',
-    text: '"Die Zusammenarbeit mit Moses war eine Freude. Er könnte mir die technischen Anforderungen des Projekts erklären, besonderes war mir wertvoll seine tiefgehende verstandnis meiner Vorstellung..."',
-    avatar: Client5,
-  },
-]
+// my customer references/recommendations
 
 export default function References() {
+  const t = useTranslations('References')
+  const reference = [
+    {
+      name: 'E. Becker',
+      position: t('neueTraditionen.position'),
+      text: t('neueTraditionen.recommendation'),
+      avatar: Client3,
+    },
+    {
+      name: 'M. Krause',
+      position: t('organicsBest.position'),
+      text: t('organicsBest.recommendation'),
+      avatar: Client4,
+    },
+    {
+      name: 'J. Wiśniewski',
+      position: t('pinkHouseHostel.position'),
+      text: t('pinkHouseHostel.recommendation'),
+      avatar: Client1,
+    },
+    {
+      name: 'F. Hankammer',
+      position: t('healingArts.position'),
+      text: t('healingArts.recommendation'),
+      avatar: Client5,
+    },
+  ]
+
   return (
     <div className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Happy Clients"
-          title="What's Said about Me"
-          description="Don't just take my word for it. See what people that worked with me
-        have to say."
+          eyebrow={t('sectionHeader.header')}
+          title={t('sectionHeader.title')}
+          description={t('sectionHeader.description')}
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
           {/* use keyframe from tailwind config to animate, pause animation on hover */}

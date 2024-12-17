@@ -19,13 +19,13 @@ export default function MapThemeToggle() {
   return resolvedTheme === 'light' ? (
     <Image
       src={berlinMap}
-      alt="local map "
+      alt="Map of Berlin"
       className="h-full w-full object-cover transform scale-[1.4] -translate-y-2 translate-x-4 "
     />
   ) : (
     <Image
       src={berlinMap2}
-      alt="local map"
+      alt="Map of Berlin"
       className="h-full w-full object-cover object-left-top transform -translate-y-10  scale-125  md:-translate-y-10 md:-translate-x-8 "
     />
   )

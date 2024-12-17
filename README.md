@@ -1,7 +1,21 @@
 ## Using:
 
+### icons:
+
 Fontawesome free svgs
 Streamline free Icon
+SVGRepo free svgs
+Noun Project: arista septiana dewi, fauzin photo
+
+inspired by Frontend Tribe
+added features such effects and form accessibility
+
+## ENV
+
+.env.local structure:
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=[YOUR_EMAILJS_SERVICE_ID]
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=[YOUR_EMAILJS_TEMPLATE_ID]
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=[YOUR_EMAILJS_PUBLIC_KEY]
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
