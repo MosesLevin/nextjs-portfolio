@@ -14,7 +14,7 @@ function Navbar() {
   const baseClass =
     'nav-item cursor-pointer px-4 py-1.5 rounded-full dark:text-white/70 text-dark/70 text-sm font-semibold dark:hover:bg-white/10 hover:bg-black/10 dark:hover:text-white hover:text-black text-black '
   const activeClass =
-    'dark:bg-white bg-black/90 dark:text-gray-900 text-brown1 dark:hover:bg-white/70 hover:bg-black/70 dark:hover:text-gray-900 hover:text-brown1'
+    'dark:bg-white bg-black/90 dark:text-gray-900 text-brown1 dark:hover:bg-white hover:bg-black/90 dark:hover:text-black hover:text-brown2 dark:hover:text-gray-900 hover:text-brown1'
 
   return (
     <div>
