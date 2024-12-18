@@ -5,6 +5,7 @@ import CheckmarkIcon from '@/src/assets/icons/checkmark.svg'
 import ArrowDiagonal from '@/src/assets/icons/arrow-diag.svg'
 import SectionHeader from '@/src/components/SectionHeader'
 import Card from '@/src/components/Card'
+import GithubIcon from '@/src/assets/icons/github.svg'
 import { useTranslations } from 'next-intl'
 
 function Projects() {
@@ -19,7 +20,8 @@ function Projects() {
         { title: t('cardSellPoint2') },
         { title: t('cardSellPoint3') },
       ],
-      link: 'www.google.com',
+      link: 'https://www.google.com',
+      githublink: '',
       image: project1Placeholder,
     },
     {
@@ -30,7 +32,8 @@ function Projects() {
         { title: t('cardSellPoint2') },
         { title: t('cardSellPoint3') },
       ],
-      link: 'www.google.com',
+      link: 'https://www.moseslevin.com',
+      githublink: 'https://github.com/MosesLevin/nextjs-portfolio',
       image: projectImagePortfolio,
     },
     {
@@ -41,7 +44,8 @@ function Projects() {
         { title: t('cardSellPoint2') },
         { title: t('cardSellPoint3') },
       ],
-      link: 'www.google.com',
+      link: 'https://www.google.com',
+      githublink: '',
       image: project1Placeholder,
     },
   ]
@@ -94,12 +98,19 @@ function Projects() {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="dark:bg-white/90 bg-black/85 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/90 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 dark:hover:ring-white/50 hover:ring-black/50 button-animation hover:scale-100">
-                      <span>{t('buttonVisit')}</span>
-                      <ArrowDiagonal className="rotate-45 size-4 dark:fill-black fill-white" />
-                    </button>
-                  </a>
+                  <div className="flex">
+                    <a href={project.link} target="_blank">
+                      <button className="dark:bg-white/90 bg-black/85 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/90 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 dark:hover:ring-white/50 hover:ring-black/50 button-animation hover:scale-100">
+                        <span>{t('buttonVisit')}</span>
+                        <ArrowDiagonal className="rotate-45 size-4 dark:fill-black fill-white" />
+                      </button>
+                    </a>
+                    <a href={project.githublink} target="_blank">
+                      <button className=" dark:text-gray-950 text-white/90 h-12 w-full md:w-auto mt-8 px-6  dark:hover:text-black hover:text-white">
+                        <GithubIcon className="size-12 fill-gray-950 dark:fill-white/90 transition duration-[125ms] hover:scale-105 " />
+                      </button>
+                    </a>
+                  </div>
                 </div>
                 <div className="relative">
                   <Image
