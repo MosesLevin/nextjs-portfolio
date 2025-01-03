@@ -1,5 +1,6 @@
 import project1Placeholder from '@/src/assets/BuildingProjectsImg.png'
 import projectImagePortfolio from '@/src/assets/Moses Portfolio website.png'
+import projectImageNeueTraditionen from '@/src/assets/Neue Traditionen website.png'
 import Image from 'next/image'
 import CheckmarkIcon from '@/src/assets/icons/checkmark.svg'
 import ArrowDiagonal from '@/src/assets/icons/arrow-diag.svg'
@@ -13,24 +14,27 @@ function Projects() {
 
   const portfolioProject = [
     {
-      year: 'YEAR',
-      title: 'Project',
+      year: '2022',
+      title: 'Neue Traditionen',
+      type: t('Project.NeueTraditionen.type'),
       result: [
-        { title: t('comingSoon') },
-        { title: t('comingSoon') },
-        { title: t('comingSoon') },
+        { title: t('Project.NeueTraditionen.technologies1') },
+        { title: t('Project.NeueTraditionen.technologies2') },
+        { title: t('Project.NeueTraditionen.technologies3') },
       ],
-      link: 'https://www.google.com',
-      githublink: 'https://github.com/MosesLevin/',
-      image: project1Placeholder,
+      link: 'https://neue-traditionen-c1056.web.app/',
+      githublink: 'https://github.com/hoolby/Neue-Traditionen',
+      image: projectImageNeueTraditionen,
     },
     {
       year: '2024',
       title: 'Moses Levin Portfolio',
+      type: t('Project.MosesPortfolio.type'),
+
       result: [
-        { title: t('p2cardSellPoint1') },
-        { title: t('p2cardSellPoint2') },
-        { title: t('p2cardSellPoint3') },
+        { title: t('Project.MosesPortfolio.technologies1') },
+        { title: t('Project.MosesPortfolio.technologies2') },
+        { title: t('Project.MosesPortfolio.technologies3') },
       ],
       link: 'https://www.moseslevin.com',
       githublink: 'https://github.com/MosesLevin/nextjs-portfolio',
@@ -39,10 +43,12 @@ function Projects() {
     {
       year: 'YEAR',
       title: 'Project',
+      type: t('Project.comingSoonTitle'),
+
       result: [
-        { title: t('comingSoon') },
-        { title: t('comingSoon') },
-        { title: t('comingSoon') },
+        { title: t('Project.comingSoon') },
+        { title: t('Project.comingSoon') },
+        { title: t('Project.comingSoon') },
       ],
       link: 'https://www.google.com',
       githublink: 'https://github.com/MosesLevin/',
@@ -77,7 +83,7 @@ function Projects() {
                 <div className="lg:pb-16">
                   {/*!!! div to hold gradient, project title line and secondary info all to be changed!!!*/}
                   <div className="bg-gradient-to-r from-orange-400 dark:from-emerald-300 to-amber-300 dark:to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text text-shadow dark:text-shadow-none">
-                    <span>{project.title}</span>
+                    <span>{project.type}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
                   </div>
