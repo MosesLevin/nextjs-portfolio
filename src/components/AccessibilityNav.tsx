@@ -29,16 +29,16 @@ const AccessibilityNav = () => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <AccessibilityIcon
-          className="size-8 md:size-10 text-gray-900 dark:text-white rounded-full shadow-lg ring-1 ring-gray-600
+          className="size-10 md:size-12 lg:size-14 text-gray-900 dark:text-white rounded-full shadow-lg ring-1 ring-gray-600
         hover:scale-125 transition-all duration-200"
         />
       </button>
       {isOpen && (
         <div
-          className="absolute right-0 mt-2 ring-2 ring-orange-500 dark:ring-gray-400 rounded-2xl shadow-lg bg-gray-50 w-28 "
-          style={{ transformOrigin: 'top right' }}
+          className="absolute top-0 right-0 translate-x-[100%] translate-y-[-100%] mt-2 ring-2 ring-orange-500 dark:ring-gray-400 rounded-2xl shadow-lg bg-gray-50 w-40 h-36 md:w-52 md:h-40"
+          style={{ transformOrigin: 'bottom left' }}
         >
-          <div className="flex flex-col items-center gap-6 mt-4">
+          <div className="flex flex-col items-center gap-6 mt-6 md:mt-8">
             <ThemeSwitch />
             <LanguageToggle />
           </div>

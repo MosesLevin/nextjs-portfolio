@@ -41,7 +41,8 @@ function Navbar() {
           ))}
         </nav>
       </div>
-      <div className="fixed top-[70px] md:top-[70px] md:right-12 right-6 z-10">
+      {/* <div className="fixed top-[70px] md:top-[70px] md:right-12 right-6 z-10"> */}
+      <div className="fixed  left-7 bottom-7 md:left-10 md:bottom-10 z-10">
         <AccessibilityNav />
       </div>
     </div>
