@@ -16,10 +16,22 @@
     "header": "Real-world Results",
     "title": "Featured Projects",
     "description": "I bring thoughts to life through interactive digital solutions",
-    "comingSoon": "Building Project...Coming Soon",
-    "p2cardSellPoint1": "Enhanced UX",
-    "p2cardSellPoint2": "Improved loading speed",
-    "p2cardSellPoint3": "Increased mobile traffic",
+    "Project": {
+      "NeueTraditionen": {
+        "type": "Burial Services",
+        "technologies1": "React, Javascript, Node.js",
+        "technologies2": "Material UI, MySQL, Firebase",
+        "technologies3": "Express, Vite, Joi "
+      },
+      "MosesPortfolio": {
+        "type": "Developer Portfolio",
+        "technologies1": "React, Javascript, Node.js",
+        "technologies2": "Next.js, Next-intl, Next-themes",
+        "technologies3": "TailwindCSS, Framer-Motion "
+      },
+      "comingSoonTitle": "Project",
+      "comingSoon": "Building Project...Coming Soon"
+    },
     "buttonVisit": "Visit Live Site"
   },
   "Banner": {

@@ -16,11 +16,23 @@
     "header": "Erfolgreiche Umsetzungen",
     "title": "Ausgewählte Projekte",
     "description": "Ich erwecke Ihre Gedanken zum Leben mithilfe interaktiven digitale Lösungen",
-    "comingSoon": "Baue Projekte...Kommt bald!",
-    "p2cardSellPoint1": "Enhanced UX",
-    "p2cardSellPoint2": "Improved loading speed",
-    "p2cardSellPoint3": "Increased mobile traffic",
-    "buttonVisit": "Webseite besuchen"
+    "Project": {
+      "NeueTraditionen": {
+        "type": "Bestattungsdienste",
+        "technologies1": "React, Javascript, Node.js",
+        "technologies2": "Material UI, MySQL, Firebase",
+        "technologies3": "Express, Vite, Joi "
+      },
+      "MosesPortfolio": {
+        "type": "Entwickler Portfolio",
+        "technologies1": "React, Javascript, Node.js",
+        "technologies2": "Next.js, Next-intl, Next-themes",
+        "technologies3": "TailwindCSS, Framer-Motion "
+      },
+      "comingSoonTitle": "Projekt",
+      "comingSoon": "Baue Projekte...Kommt bald!"
+    },
+    "buttonVisit": "Webseite Besuchen"
   },
   "Banner": {
     "word1": "Leistungsstark",
