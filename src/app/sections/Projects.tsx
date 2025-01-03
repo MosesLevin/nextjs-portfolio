@@ -13,15 +13,15 @@ function Projects() {
 
   const portfolioProject = [
     {
-      year: 'YEAR',
-      title: 'Project',
+      year: '2022',
+      title: 'Neue Traditionen',
       result: [
         { title: t('comingSoon') },
         { title: t('comingSoon') },
         { title: t('comingSoon') },
       ],
-      link: 'https://www.google.com',
-      githublink: 'https://github.com/MosesLevin/',
+      link: 'https://neue-traditionen-c1056.web.app/',
+      githublink: 'https://github.com/hoolby/Neue-Traditionen',
       image: project1Placeholder,
     },
     {
