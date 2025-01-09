@@ -25,12 +25,12 @@ function Projects() {
       link: 'https://neue-traditionen-c1056.web.app/',
       githublink: 'https://github.com/hoolby/Neue-Traditionen',
       image: projectImageNeueTraditionen,
+      ariaLabel: 'Neue Traditionen GitHub Repository',
     },
     {
       year: '2024',
       title: 'Moses Levin Portfolio',
       type: t('Project.MosesPortfolio.type'),
-
       result: [
         { title: t('Project.MosesPortfolio.technologies1') },
         { title: t('Project.MosesPortfolio.technologies2') },
@@ -39,6 +39,7 @@ function Projects() {
       link: 'https://www.moseslevin.com',
       githublink: 'https://github.com/MosesLevin/nextjs-portfolio',
       image: projectImagePortfolio,
+      ariaLabel: 'Moses Levin Portfolio GitHub Repository',
     },
     {
       year: 'YEAR',
@@ -53,6 +54,7 @@ function Projects() {
       link: 'https://www.google.com',
       githublink: 'https://github.com/MosesLevin/',
       image: project1Placeholder,
+      ariaLabel: 'Project GitHub Repository',
     },
   ]
 
@@ -106,13 +108,23 @@ function Projects() {
                   </ul>
                   <div className="flex">
                     <a href={project.link} target="_blank">
-                      <button className="dark:bg-white/90 bg-black/85 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/90 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 dark:hover:ring-white/50 hover:ring-black/50 button-animation hover:scale-100">
+                      <button
+                        className="dark:bg-white/90 bg-black/85 dark:text-gray-950 text-white/90 h-12 w-full md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 dark:hover:bg-white/95 hover:bg-black/90 dark:hover:text-black hover:text-white transition duration-[125ms] hover:ring-1 dark:hover:ring-white/50 hover:ring-black/50 button-animation hover:scale-100"
+                        aria-label="Visit Live Website in new tab"
+                      >
                         <span>{t('buttonVisit')}</span>
                         <ArrowDiagonal className="rotate-45 size-4 dark:fill-black fill-white" />
                       </button>
                     </a>
-                    <a href={project.githublink} target="_blank">
-                      <button className=" dark:text-gray-950 text-white/90 h-12 w-full md:w-auto mt-8 px-6  dark:hover:text-black hover:text-white">
+                    <a
+                      href={project.githublink}
+                      target="_blank"
+                      aria-label={project.ariaLabel}
+                    >
+                      <button
+                        className=" dark:text-gray-950 text-white/90 h-12 w-full md:w-auto mt-8 px-6  dark:hover:text-black hover:text-white"
+                        aria-label="Visit GitHub Repository In new tab"
+                      >
                         <GithubIcon className="size-12 fill-gray-950 dark:fill-white/90 transition duration-[125ms] hover:scale-105 " />
                       </button>
                     </a>

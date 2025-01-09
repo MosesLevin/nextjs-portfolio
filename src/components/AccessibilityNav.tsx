@@ -27,6 +27,7 @@ const AccessibilityNav = () => {
       <button
         className="ring-2 dark:ring-white ring-black rounded-full button-animation"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="Accessibility settings Menu"
       >
         <AccessibilityIcon
           className="size-10 md:size-12 lg:size-14 text-gray-900 dark:text-white rounded-full shadow-lg ring-1 ring-gray-600

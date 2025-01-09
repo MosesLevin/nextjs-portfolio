@@ -33,6 +33,7 @@ export default function Contact() {
                     <button
                       className=" text-white bg-black inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 
                   button-animation ring-2 ring-gray-800 hover:ring-gray-800 hover:ring-4"
+                      aria-label="email me"
                     >
                       <span className="font-semibold">{t('emailText')}</span>
                       <Arrow className="rotate-45 fill-white size-4" />
