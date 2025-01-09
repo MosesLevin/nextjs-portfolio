@@ -25,12 +25,14 @@ const LanguageToggle = () => {
       <button
         className="font-serif underline underline-offset-4 decoration-black p-2 rounded-full text-gray-700 hover:text-gray-500 transition"
         onClick={() => toggleLanguage('en')}
+        aria-label="English Language"
       >
         EN
       </button>
       <button
         className="font-serif underline underline-offset-4 decoration-black p-2 rounded-full text-gray-700 hover:text-gray-500 transition"
         onClick={() => toggleLanguage('de')}
+        aria-label="German Language"
       >
         DE
       </button>

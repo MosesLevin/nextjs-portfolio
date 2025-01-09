@@ -168,6 +168,7 @@ const ContactForm: React.FC = () => {
           disabled={isSubmitting}
           className="w-full md:w-[420px] lg:w-[550px] py-3 px-3 bg-gradient-to-r mt-4 from-amber-300 dark:from-emerald-300 to-orange-500 dark:to-sky-400 text-gray-950 font-semibold
           button-animation focus:ring-1 dark:focus-visible:ring-white focus-visible:ring-black hover:ring-2 dark:hover:ring-sky-200 hover:ring-amber-300 hover:text-black "
+          aria-label="Submit and Send message"
         >
           {isSubmitting ? t('sending') : t('send')}
         </button>
