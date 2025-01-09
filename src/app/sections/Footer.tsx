@@ -4,22 +4,30 @@ import MailIcon from '@/src/assets/icons/envelope.svg'
 import StackIcons from '@/src/components/StackIcons'
 import { useTranslations } from 'next-intl'
 
-type footLinks = { title: string; href: string; icon: React.ElementType }
+type footLinks = {
+  title: string
+  href: string
+  icon: React.ElementType
+  ariaLabel?: string
+}
 const footLinks: footLinks[] = [
   {
     title: 'Linkedin',
     href: 'https://www.linkedin.com/in/moses-levin/',
     icon: LinkedinIcon,
+    ariaLabel: 'Linkedin Profile in new tab',
   },
   {
     title: 'GitHub',
     href: 'https://github.com/MosesLevin',
     icon: GithubIcon,
+    ariaLabel: 'GitHub Profile in new tab',
   },
   {
     title: 'E-Mail',
     href: 'mailto:moses.levin14@gmail.com',
     icon: MailIcon,
+    ariaLabel: 'Send E-Mail to Moses in new tab',
   },
 ]
 
@@ -44,6 +52,7 @@ export default function Footer() {
                 key={link.title}
                 target="_blank"
                 className="inline-flex items-center gap-2 hover:underline decoration-black dark:decoration-white underline-offset-4"
+                aria-label={link.ariaLabel}
               >
                 {/* added declaration for SVGR in typescript in root so we can use link.icon */}
                 <span className="font-semibold dark:text-white text-black/70">
