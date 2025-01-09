@@ -15,19 +15,19 @@ const footLinks: footLinks[] = [
     title: 'Linkedin',
     href: 'https://www.linkedin.com/in/moses-levin/',
     icon: LinkedinIcon,
-    ariaLabel: 'Linkedin Profile',
+    ariaLabel: 'Linkedin Profile in new tab',
   },
   {
     title: 'GitHub',
     href: 'https://github.com/MosesLevin',
     icon: GithubIcon,
-    ariaLabel: 'GitHub Profile',
+    ariaLabel: 'GitHub Profile in new tab',
   },
   {
     title: 'E-Mail',
     href: 'mailto:moses.levin14@gmail.com',
     icon: MailIcon,
-    ariaLabel: 'Send E-Mail to Moses',
+    ariaLabel: 'Send E-Mail to Moses in new tab',
   },
 ]
 
