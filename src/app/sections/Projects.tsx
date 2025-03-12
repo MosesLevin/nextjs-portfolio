@@ -1,6 +1,7 @@
 import project1Placeholder from '@/src/assets/BuildingProjectsImg.png'
 import projectImagePortfolio from '@/src/assets/Moses Portfolio website.png'
 import projectImageNeueTraditionen from '@/src/assets/Neue Traditionen website.png'
+import projectImageTarbutGan from '@/src/assets/TarbutGan.png'
 import Image from 'next/image'
 import CheckmarkIcon from '@/src/assets/icons/checkmark.svg'
 import ArrowDiagonal from '@/src/assets/icons/arrow-diag.svg'
@@ -42,20 +43,34 @@ function Projects() {
       ariaLabel: 'Moses Levin Portfolio GitHub Repository',
     },
     {
-      year: 'YEAR',
-      title: 'Project',
-      type: t('Project.comingSoonTitle'),
-
+      year: '2025',
+      title: 'Tarbut Gan',
+      type: t('Project.TarbutGan.type'),
       result: [
-        { title: t('Project.comingSoon') },
-        { title: t('Project.comingSoon') },
-        { title: t('Project.comingSoon') },
+        { title: t('Project.TarbutGan.technologies1') },
+        { title: t('Project.TarbutGan.technologies2') },
+        { title: t('Project.TarbutGan.technologies3') },
       ],
-      link: 'https://www.google.com',
-      githublink: 'https://github.com/MosesLevin/',
-      image: project1Placeholder,
-      ariaLabel: 'Project GitHub Repository',
+      link: 'https://tarbutgan.co.il/',
+      githublink: 'https://github.com/MosesLevin/Shirel-Gardening',
+      image: projectImageTarbutGan,
+      ariaLabel: 'Tarbut Gan Project GitHub Repository',
     },
+    // {
+    //   year: 'YEAR',
+    //   title: 'Project',
+    //   type: t('Project.comingSoonTitle'),
+
+    //   result: [
+    //     { title: t('Project.comingSoon') },
+    //     { title: t('Project.comingSoon') },
+    //     { title: t('Project.comingSoon') },
+    //   ],
+    //   link: 'https://www.google.com',
+    //   githublink: 'https://github.com/MosesLevin/',
+    //   image: project1Placeholder,
+    //   ariaLabel: 'Project GitHub Repository',
+    // },
   ]
 
   return (
