@@ -25,9 +25,15 @@
       },
       "MosesPortfolio": {
         "type": "Developer Portfolio",
-        "technologies1": "React, Javascript, Node.js",
+        "technologies1": "React, Javascript, Typescript, Node.js",
         "technologies2": "Next.js, Next-intl, Next-themes",
-        "technologies3": "TailwindCSS, Framer-Motion "
+        "technologies3": "TailwindCSS, framer-motion "
+      },
+      "TarbutGan": {
+        "type": "Gardening Services",
+        "technologies1": "React, Javascript, Typescript, Node.js",
+        "technologies2": "Next.js, framer-motion",
+        "technologies3": "TailwindCSS, twMerge"
       },
       "comingSoonTitle": "Project",
       "comingSoon": "Building Project...Coming Soon"
